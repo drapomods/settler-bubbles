@@ -1,0 +1,128 @@
+plugins {
+    id 'java'
+}
+
+project.ext.modID = 'draporid.settlerbubbles'
+project.ext.modName = 'Settler Bubbles'
+project.ext.modVersion = '1.1.1'
+project.ext.gameVersion = '1.3.2'
+project.ext.modDescription = 'Speech bubbles inspired by RimWorld that make settlers and visitors feel alive.'
+project.ext.author = 'Draporid'
+project.ext.clientside = false
+
+def gameDirectory = 'E:/Steam/steamapps/common/Necesse'
+def buildLocation = 'build/jar/'
+def jarName = "${project.ext.modName.replace(' ', '')}-${project.ext.gameVersion}-${project.ext.modVersion}"
+
+group = project.ext.modID
+version = project.ext.modVersion
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    libDepends
+}
+
+sourceSets.main.output.resourcesDir = file('build/mod/resources/')
+sourceSets.main.java.getDestinationDirectory().set(file('build/mod/'))
+sourceSets.main.compileClasspath += configurations.libDepends
+
+compileJava.options.encoding = 'UTF-8'
+compileJava.options.compilerArgs += ['-Xlint:deprecation']
+
+if (!file(gameDirectory + '/Necesse.jar').exists()) {
+    throw new GradleException("Could not find Necesse.jar in ${gameDirectory}")
+}
+
+dependencies {
+    implementation files(gameDirectory + '/Necesse.jar')
+    implementation fileTree(gameDirectory + '/lib/')
+    implementation fileTree('./mods/')
+}
+
+tasks.register('createAppID') {
+    group = 'necesse'
+    description = 'Creates steam_appid.txt for development launches.'
+    doLast {
+        file('steam_appid.txt').text = '1169040'
+    }
+}
+
+tasks.register('createModInfoFile', JavaExec) {
+    group = 'necesse'
+    description = 'Creates the generated mod.info file.'
+    classpath = files(gameDirectory + '/Necesse.jar')
+    getMainClass().set('CreateModInfoFile')
+    args '-file', "${sourceSets.main.java.getClassesDirectory().get()}/mod.info",
+            '-id', project.ext.modID,
+            '-name', project.ext.modName,
+            '-version', project.ext.modVersion,
+            '-gameVersion', project.ext.gameVersion,
+            '-description', project.ext.modDescription,
+            '-author', project.ext.author,
+            '-clientside', project.ext.clientside,
+            '-dependencies', '',
+            '-optionalDependencies', ''
+}
+
+classes.dependsOn('createModInfoFile')
+
+tasks.register('preAntialiasTextures', JavaExec) {
+    group = 'necesse'
+    description = 'Pre-antialiases transparent texture edges.'
+    classpath = files(gameDirectory + '/Necesse.jar')
+    getMainClass().set('PreAntialiasTextures')
+    args '-folders', sourceSets.main.resources.srcDirs.stream().map { it.path }.toArray().join(';')
+}
+
+tasks.register('runClient', JavaExec) {
+    group = 'necesse'
+    description = 'Builds and launches Necesse with Settler Bubbles.'
+    dependsOn 'buildModJar', 'createAppID'
+    classpath = files(gameDirectory + '/Necesse.jar')
+    getMainClass().set('StartSteamClient')
+    jvmArgs '-Xms512m', '-Xmx4G', '-XX:+UseG1GC'
+    args '-dev', "-mod \"${buildLocation}\""
+}
+
+tasks.register('runDevClient', JavaExec) {
+    group = 'necesse'
+    description = 'Launches a second client for multiplayer testing.'
+    dependsOn 'buildModJar', 'createAppID'
+    classpath = files(gameDirectory + '/Necesse.jar')
+    getMainClass().set('StartSteamClient')
+    jvmArgs '-Xms512m', '-Xmx4G', '-XX:+UseG1GC'
+    args '-dev 1', "-mod \"${buildLocation}\""
+}
+
+tasks.register('runServer', JavaExec) {
+    group = 'necesse'
+    description = 'Builds and launches a dedicated server with Settler Bubbles.'
+    dependsOn 'buildModJar'
+    classpath = files(gameDirectory + '/Server.jar')
+    getMainClass().set('StartDesktopServer')
+    jvmArgs '-Xms512m', '-Xmx4G', '-XX:+UseG1GC'
+    args "-mod \"${buildLocation}\""
+}
+
+tasks.register('buildModJar', Jar) {
+    group = 'necesse'
+    description = 'Generates the distributable mod jar.'
+    dependsOn 'classes', 'createModInfoFile'
+    doFirst {
+        fileTree(dir: buildLocation).exclude("${jarName}.jar").visit { details ->
+            delete details.file
+        }
+    }
+    from sourceSets.main.java.getClassesDirectory()
+    from configurations.libDepends.collect { it.isDirectory() ? it : zipTree(it) }
+    setArchiveFileName("${jarName}.jar")
+    setDestinationDirectory(file(buildLocation))
+}

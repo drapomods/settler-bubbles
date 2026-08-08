@@ -1,0 +1,187 @@
+[settlerbubbles]
+social_person1=Have you spoken with <other> lately?
+social_person2=I wonder how <other> is doing.
+social_person3=<other> always has an interesting story.
+social_person4=You know what <other> said the other day?
+social_person_energetic1=We should get <other> in on this too!
+social_person_refined1=<other> has rather fascinating opinions.
+
+social_animal1=I saw a <animal> nearby earlier.
+social_animal2=Do you like <animal>s? I think they are charming.
+social_animal3=Imagine keeping a <animal> around the settlement.
+social_animal4=A <animal> crossed my path today.
+social_animal_gentle1=I hope that little <animal> is safe out there.
+
+social_food1=I could really go for some <food>.
+social_food2=What do you think about <food>?
+social_food3=Nothing brings people together like <food>.
+social_food4=I have been thinking about <food> all day.
+social_food_refined1=A properly prepared <food> can be delightful.
+
+social_positive1=That is exactly what I was thinking!
+social_positive2=You make a very good point, <other>.
+social_positive3=Ha, I knew you would understand.
+social_positive4=We agree more often than you think.
+social_positive_energetic1=Yes! Now that is what I like to hear!
+social_positive_gentle1=I am glad we see it the same way, <other>.
+
+social_negative1=I am not convinced about that.
+social_negative2=We may have to disagree, <other>.
+social_negative3=That does not sound right to me.
+social_negative4=I see it rather differently.
+social_negative_tough1=No. I am standing my ground on this one.
+social_negative_stressed1=Can we please not argue about this now?
+
+social_followup1=Glad we sorted that out.
+social_followup2=Good talk, <other>.
+social_followup3=Well, that made the day more interesting.
+social_followup4=Let us continue this another time.
+
+social_person_positive1=I spoke with <topic> this morning. We had a good laugh.
+social_person_positive2=<topic> has always been kind to me.
+social_person_positive3=I like <topic>. They make this place feel welcoming.
+social_person_positive4=You are right. <topic> is good company.
+social_person_negative1=I am not so sure about <topic>.
+social_person_negative2=<topic> and I have not exactly seen eye to eye.
+social_person_negative3=I would rather keep my distance from <topic>.
+social_person_negative4=You may trust <topic>, but I still have doubts.
+social_person_followup_positive1=Maybe we should invite <topic> to join us next time.
+social_person_followup_positive2=I am glad you appreciate <topic> too.
+social_person_followup_positive3=Then we agree: <topic> is worth knowing.
+social_person_followup_negative1=Let us leave <topic> out of our next conversation.
+social_person_followup_negative2=We clearly see <topic> very differently.
+social_person_followup_negative3=Perhaps we should change the subject before <topic> hears us.
+
+social_animal_positive1=<topic>s are lovely. I always stop to watch them.
+social_animal_positive2=I saw that <topic> too! It looked perfectly content.
+social_animal_positive3=We should make sure the <topic> has somewhere safe to wander.
+social_animal_positive4=A <topic> can brighten even a difficult day.
+social_animal_negative1=I do not trust that <topic> one bit.
+social_animal_negative2=That <topic> keeps getting where it should not be.
+social_animal_negative3=I would prefer the <topic> stayed away from my room.
+social_animal_negative4=Charming? That <topic> looks like trouble to me.
+social_animal_followup_positive1=Next time we see the <topic>, let us take a closer look.
+social_animal_followup_positive2=Perhaps the <topic> will visit us again tomorrow.
+social_animal_followup_positive3=I knew you would understand why I like that <topic>.
+social_animal_followup_negative1=Fine, I will keep the <topic> away from your things.
+social_animal_followup_negative2=We can admire the <topic> from a safe distance, then.
+social_animal_followup_negative3=I suppose the <topic> is not for everyone.
+
+social_food_positive1=<topic> sounds wonderful right now.
+social_food_positive2=Finally, someone else appreciates good <topic>.
+social_food_positive3=I had <topic> recently. It was delicious.
+social_food_positive4=We should share some <topic> after work.
+social_food_negative1=Honestly, I have had enough <topic> for a while.
+social_food_negative2=<topic>? I would rather go hungry.
+social_food_negative3=The last <topic> I ate was deeply disappointing.
+social_food_negative4=You can have my portion of <topic>.
+social_food_followup_positive1=Then <topic> is going on tonight's menu.
+social_food_followup_positive2=I will save you some <topic> if I find any.
+social_food_followup_positive3=Good. It is settled: we are having <topic>.
+social_food_followup_negative1=More <topic> for me, then.
+social_food_followup_negative2=I will remember not to offer you <topic>.
+social_food_followup_negative3=We may never agree about <topic>.
+
+work1=That is another task finished.
+work2=Steady hands make light work.
+work3=The settlement will be better for this.
+work4=One job down, plenty more to go.
+work_energetic1=Done already! What is next?
+work_tough1=Hard work never scared me.
+work_refined1=A tidy result, if I may say so.
+
+work_farm1=These crops are coming along nicely.
+work_farm2=Good soil rewards patient hands.
+work_farm3=That should keep the pantry supplied.
+
+work_fish1=Not a bad catch at all.
+work_fish2=The water was generous today.
+work_fish3=Fresh fish for the settlement!
+
+work_craft1=Made to last.
+work_craft2=That came together rather well.
+work_craft3=Nothing beats making something useful.
+
+work_wood1=That should give us enough timber.
+work_wood2=Another tree put to good use.
+work_wood3=Plenty of sturdy wood here.
+
+needs_hungry1=My stomach is doing all the talking now.
+needs_hungry2=I need to find something to eat soon.
+needs_hungry3=Please tell me we still have food.
+needs_hungry4=It is difficult to work on an empty stomach.
+needs_hungry5=Even stale bread sounds wonderful right now.
+needs_hungry_stressed1=Food. Soon. Before I lose my patience.
+
+mood_low1=Today is taking a lot out of me.
+mood_low2=I could use a quiet moment.
+mood_low3=Things have been better.
+mood_low4=I am trying, but it is a rough day.
+mood_low5=Maybe tomorrow will feel easier.
+mood_low_gentle1=I do not want to worry anyone, but I am struggling.
+mood_low_stressed1=Everything feels like too much right now.
+
+mood_high1=This is shaping up to be a fine day.
+mood_high2=You know, life here is pretty good.
+mood_high3=I am happy to call this place home.
+mood_high4=Things are really coming together.
+mood_high5=I cannot help smiling today.
+mood_high_energetic1=What a day! I feel unstoppable!
+mood_high_refined1=The settlement has been especially pleasant today.
+
+combat_hit1=Ow! I definitely felt that.
+combat_hit2=That was far too close.
+combat_hit3=I could use some help here!
+combat_hit4=You will regret that!
+combat_hit5=Still standing!
+combat_hit_gentle1=Why can nobody ever settle this peacefully?
+combat_hit_tough1=That all you have got?
+combat_hit_stressed1=No, no, this is going badly!
+
+combat_kill1=Threat dealt with.
+combat_kill2=The settlement is safe again.
+combat_kill3=And stay down!
+combat_kill4=One less thing to worry about.
+combat_kill5=That was the last mistake it will make.
+combat_kill_energetic1=Yes! Did everyone see that?
+combat_kill_tough1=Should have picked an easier target.
+
+needs_injured1=I should get these wounds looked at.
+needs_injured2=Every step hurts more than the last.
+needs_injured3=I am in no condition to keep this up.
+needs_injured4=A bandage and a bed would be wonderful right now.
+
+needs_recreation1=I need a break before the next job.
+needs_recreation2=Work, eat, sleep, repeat. I need something fun.
+needs_recreation3=I cannot remember the last time I relaxed.
+needs_recreation4=A little recreation would do me good.
+
+needs_strike1=No more work until things improve around here.
+needs_strike2=They can finish the jobs themselves for once.
+needs_strike3=I have had enough. I am taking a stand.
+needs_strike4=Maybe now someone will listen to our complaints.
+
+weather_rain1=The rain makes the whole settlement smell fresh.
+weather_rain2=I hope we brought everything important inside.
+weather_rain3=At least the crops will appreciate this weather.
+weather_rain4=Another wet day. Better watch the mud.
+
+weather_night1=The settlement is peaceful at this hour.
+weather_night2=It is getting late. I should finish up soon.
+weather_night3=The darkness beyond the lights always feels strange.
+weather_night4=A warm bed sounds better every minute.
+
+activity_busy1=I am busy with <activity> right now.
+activity_busy2=<activity> should not take much longer.
+activity_busy3=Back to <activity>. There is still work to do.
+activity_busy4=I hope <activity> goes smoothly today.
+
+visitor1=This settlement is more interesting than I expected.
+visitor2=I wonder what it would be like to live here.
+visitor3=Everyone seems to know exactly what they are doing.
+visitor4=I should remember this place on my next journey.
+
+idle1=A quiet moment is a rare luxury.
+idle2=I wonder if anyone needs a hand.
+idle3=Nothing urgent for once. That feels unusual.
+idle4=Maybe I can enjoy the view for a minute.
