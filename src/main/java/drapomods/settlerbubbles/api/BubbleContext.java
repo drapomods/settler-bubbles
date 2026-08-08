@@ -1,11 +1,11 @@
-package draporid.settlerbubbles.api;
+package drapomods.settlerbubbles.api;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import draporid.settlerbubbles.BubbleCategory;
-import draporid.settlerbubbles.BubbleStyle;
+import drapomods.settlerbubbles.BubbleCategory;
+import drapomods.settlerbubbles.BubbleStyle;
 import necesse.engine.localization.message.GameMessage;
 import necesse.entity.mobs.Mob;
 
@@ -125,4 +125,3 @@ public final class BubbleContext {
         }
     }
 }
-

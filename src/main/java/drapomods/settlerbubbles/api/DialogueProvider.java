@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.api;
+package drapomods.settlerbubbles.api;
 
 import java.util.Collection;
 
@@ -6,4 +6,3 @@ import java.util.Collection;
 public interface DialogueProvider {
     Collection<BubbleLine> getLines(BubbleContext context);
 }
-

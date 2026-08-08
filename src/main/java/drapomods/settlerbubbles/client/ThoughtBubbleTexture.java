@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.client;
+package drapomods.settlerbubbles.client;
 
 import java.awt.Color;
 

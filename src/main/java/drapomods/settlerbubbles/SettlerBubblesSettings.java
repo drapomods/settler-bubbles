@@ -1,4 +1,4 @@
-package draporid.settlerbubbles;
+package drapomods.settlerbubbles;
 
 import necesse.engine.modLoader.ModSettings;
 import necesse.engine.save.LoadData;

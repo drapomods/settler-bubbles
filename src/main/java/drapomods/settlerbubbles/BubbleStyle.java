@@ -1,4 +1,4 @@
-package draporid.settlerbubbles;
+package drapomods.settlerbubbles;
 
 public enum BubbleStyle {
     SPEECH,
@@ -16,4 +16,3 @@ public enum BubbleStyle {
                 : category == BubbleCategory.COMBAT ? SHOUT : SPEECH;
     }
 }
-

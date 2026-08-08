@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.client;
+package drapomods.settlerbubbles.client;
 
 import necesse.gfx.drawOptions.DrawOptions;
 import necesse.gfx.drawOptions.texture.SharedTextureDrawOptions;

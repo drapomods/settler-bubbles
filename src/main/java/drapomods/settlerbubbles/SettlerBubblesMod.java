@@ -1,7 +1,7 @@
-package draporid.settlerbubbles;
+package drapomods.settlerbubbles;
 
-import draporid.settlerbubbles.command.BubblesClientCommand;
-import draporid.settlerbubbles.network.SpeechBubblePacket;
+import drapomods.settlerbubbles.command.BubblesClientCommand;
+import drapomods.settlerbubbles.network.SpeechBubblePacket;
 import necesse.engine.commands.CommandsManager;
 import necesse.engine.modLoader.ModSettings;
 import necesse.engine.modLoader.annotations.ModEntry;

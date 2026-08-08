@@ -1,6 +1,6 @@
-package draporid.settlerbubbles.patch;
+package drapomods.settlerbubbles.patch;
 
-import draporid.settlerbubbles.dialogue.DialogueManager;
+import drapomods.settlerbubbles.dialogue.DialogueManager;
 import necesse.engine.modLoader.annotations.ModMethodPatch;
 import necesse.entity.mobs.MobWasHitEvent;
 import necesse.entity.mobs.MobWasKilledEvent;

@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.api;
+package drapomods.settlerbubbles.api;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import draporid.settlerbubbles.SettlerBubblesSettings;
-import draporid.settlerbubbles.network.SpeechBubblePacket;
+import drapomods.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.network.SpeechBubblePacket;
 import necesse.engine.GameLog;
 import necesse.engine.localization.message.GameMessage;
 import necesse.engine.util.GameRandom;
@@ -167,4 +167,3 @@ public final class SettlerBubblesAPI {
         }
     }
 }
-

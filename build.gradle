@@ -2,12 +2,12 @@ plugins {
     id 'java'
 }
 
-project.ext.modID = 'draporid.settlerbubbles'
+project.ext.modID = 'drapomods.settlerbubbles'
 project.ext.modName = 'Settler Bubbles'
-project.ext.modVersion = '1.1.1'
+project.ext.modVersion = '1.0.0'
 project.ext.gameVersion = '1.3.2'
 project.ext.modDescription = 'Speech bubbles inspired by RimWorld that make settlers and visitors feel alive.'
-project.ext.author = 'Draporid'
+project.ext.author = 'DrapoMods'
 project.ext.clientside = false
 
 def gameDirectory = 'E:/Steam/steamapps/common/Necesse'
