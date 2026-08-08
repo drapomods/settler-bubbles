@@ -1,0 +1,66 @@
+Settler Bubbles Source License 1.0
+
+Copyright (c) 2026 DrapoMods. All rights reserved.
+
+This license applies to the original Settler Bubbles source code,
+documentation, resources and distributed mod files (the "Software") owned by
+DrapoMods. Third-party components remain subject to their own licenses.
+
+1. Permitted use
+
+You may:
+
+- download, install and use unmodified official copies of the Software for
+  personal or community gameplay, including recording, streaming and
+  monetizing gameplay footage, provided that access to the Software itself is
+  not sold, paywalled, reuploaded or redistributed;
+- view the source code for reference, security review and interoperability;
+- link to an official DrapoMods download page; and
+- create and distribute independently written add-ons that interact with an
+  official copy of Settler Bubbles only through its documented public API.
+
+An add-on must not contain a substantial part of the Software, bundle or
+redistribute Settler Bubbles, claim to be an official DrapoMods product, or use
+Settler Bubbles or DrapoMods artwork and branding as its own. Descriptive use
+of the name "Settler Bubbles" to explain compatibility is allowed.
+
+You may create a temporary GitHub fork solely to propose a contribution to the
+official repository. Such a fork may not be used to publish or distribute an
+independent version of the Software.
+
+2. Restrictions
+
+Except where this license explicitly permits it, you may not, without prior
+written permission from DrapoMods:
+
+- copy, mirror, redistribute, reupload or sublicense the Software;
+- publish or distribute a modified version, fork, port or derivative work;
+- sell, rent, paywall, monetize access to or otherwise commercially exploit
+  the Software itself;
+- remove or alter copyright, license or attribution notices; or
+- use the Settler Bubbles or DrapoMods names, logos, artwork or branding in a
+  way that suggests ownership, endorsement or official status.
+
+3. Contributions
+
+By intentionally submitting code or other material for inclusion in the
+official Settler Bubbles repository, you grant DrapoMods a perpetual,
+worldwide, royalty-free, transferable and sublicensable license to use,
+modify, reproduce, distribute and relicense that contribution as part of
+Settler Bubbles. You confirm that you have the right to grant this permission.
+
+4. Termination
+
+Your permission under this license ends automatically if you violate its
+terms. Sections that by their nature should survive termination remain in
+effect.
+
+5. No warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED
+BY LAW, DRAPOMODS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
+ARISING FROM THE SOFTWARE OR ITS USE.
+
+For permissions not granted here, contact drapomods@proton.me.

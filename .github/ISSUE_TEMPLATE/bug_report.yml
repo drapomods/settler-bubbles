@@ -1,0 +1,72 @@
+name: Bug report
+description: Report something in Settler Bubbles that is not working correctly.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Settler Bubbles. Please remove private information from logs before uploading them.
+  - type: input
+    id: mod-version
+    attributes:
+      label: Settler Bubbles version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Necesse version
+      placeholder: 1.3.2
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - Hosted multiplayer
+        - Dedicated server
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Load a world...
+        2. Wait for...
+        3. See the problem...
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other installed mods
+      description: List other enabled mods, or write "None".
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste the relevant part of `%APPDATA%\Necesse\latest-log.txt` or attach the file. Remove private information first.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Final checks
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed private information from logs and screenshots.
+          required: true
