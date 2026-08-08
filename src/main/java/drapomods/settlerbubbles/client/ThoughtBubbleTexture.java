@@ -37,7 +37,10 @@ final class ThoughtBubbleTexture {
             }
         }
         drawThoughtTrail(result, 3 * TILE_SIZE, TILE_SIZE);
-        return result.makeFinal();
+        // HUD drawables are prepared on parallel level-draw workers. Uploading
+        // the texture here would call OpenGL without a current context. Let
+        // GameTexture upload and finalize it on the actual render thread.
+        return result.finalizeLater();
     }
 
     private static void drawFrameTile(GameTexture texture, int tileX, int tileY) {
