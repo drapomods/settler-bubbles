@@ -10,7 +10,21 @@ project.ext.modDescription = 'Speech bubbles inspired by RimWorld that make sett
 project.ext.author = 'DrapoMods'
 project.ext.clientside = false
 
-def gameDirectory = 'E:/Steam/steamapps/common/Necesse'
+def configuredGameDirectory = providers.gradleProperty('necesseDir')
+        .orElse(providers.environmentVariable('NECESSE_DIR'))
+        .getOrNull()
+def commonGameDirectories = [
+        'C:/Program Files (x86)/Steam/steamapps/common/Necesse',
+        'C:/Program Files/Steam/steamapps/common/Necesse'
+]
+def gameDirectory = configuredGameDirectory ?: commonGameDirectories.find {
+    file("${it}/Necesse.jar").exists()
+}
+
+if (gameDirectory == null) {
+    throw new GradleException('Could not find Necesse. Set necesseDir in gradle.properties, pass -PnecesseDir=..., or set NECESSE_DIR.')
+}
+
 def buildLocation = 'build/jar/'
 def jarName = "${project.ext.modName.replace(' ', '')}-${project.ext.gameVersion}-${project.ext.modVersion}"
 
@@ -38,7 +52,7 @@ compileJava.options.encoding = 'UTF-8'
 compileJava.options.compilerArgs += ['-Xlint:deprecation']
 
 if (!file(gameDirectory + '/Necesse.jar').exists()) {
-    throw new GradleException("Could not find Necesse.jar in ${gameDirectory}")
+    throw new GradleException("Could not find Necesse.jar in ${gameDirectory}. Check necesseDir, -PnecesseDir, or NECESSE_DIR.")
 }
 
 dependencies {

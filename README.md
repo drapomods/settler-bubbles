@@ -1,7 +1,9 @@
 # Settler Bubbles
 
-Settler Bubbles is a Necesse 1.3.2 mod inspired by RimWorld's Interaction Bubbles.
-It turns the game's existing settler chatter into readable conversations and adds
+![Settler Bubbles](src/main/resources/preview.png)
+
+Settler Bubbles is a Necesse 1.3.2 mod inspired by RimWorld's Interaction
+Bubbles. It turns existing settler chatter into readable conversations and adds
 short contextual lines for social life, work, needs, mood, weather and combat.
 
 Created by [DrapoMods](https://github.com/drapomods).
@@ -23,10 +25,29 @@ Created by [DrapoMods](https://github.com/drapomods).
 - A versioned Java API for add-on mods and compatibility integrations.
 - No world save data; the mod can be added or removed safely.
 
+## Requirements and installation
+
+Settler Bubbles 1.0.0 targets Necesse 1.3.2. In multiplayer, install the same
+mod version on the host or dedicated server and on every connecting client.
+
+For manual installation, place the release jar in
+`%APPDATA%\Necesse\mods\` and enable Settler Bubbles in the game's Mods menu.
+Steam Workshop installation will become available with the first public
+release.
+
+## Commands and settings
+
+- `/bubbles` toggles bubbles for the current play session.
+- `/bubbles on` enables them for the current session.
+- `/bubbles off` disables them for the current session.
+
+Frequency, visibility distance, duration and event categories can be adjusted
+in the mod settings. Bubbles start enabled; no command is required after launch.
+
 ## Java API
 
 The public API is in `drapomods.settlerbubbles.api`. Add-on mods should declare
-`drapomods.settlerbubbles` as a dependency and can check
+`drapomods.settlerbubbles` as a dependency and check
 `SettlerBubblesAPI.API_VERSION` before registering integrations.
 
 Show one bubble directly from server-side code:
@@ -76,7 +97,33 @@ the speaker's level.
 
 ## Development
 
+Copy `gradle.properties.example` to `gradle.properties` and set `necesseDir` to
+your Necesse installation. You can instead pass `-PnecesseDir=...` or set the
+`NECESSE_DIR` environment variable. Common Windows Steam locations are detected
+automatically.
+
 - `gradlew.bat buildModJar` builds the distributable jar.
 - `gradlew.bat runClient` launches the normal development client.
 - `gradlew.bat runDevClient` launches a second client.
 - `gradlew.bat runServer` launches a dedicated server.
+
+## Support
+
+- Report bugs or request features through [GitHub Issues](https://github.com/drapomods/settler-bubbles/issues).
+- Private contact: [drapomods@proton.me](mailto:drapomods@proton.me)
+- Reddit: [u/DrapoMods](https://www.reddit.com/user/DrapoMods/)
+- Discord: `DrapoMods`
+
+When reporting a bug, include the Settler Bubbles version, Necesse version,
+singleplayer/server type, reproduction steps, other installed mods and the
+relevant part of `%APPDATA%\Necesse\latest-log.txt`.
+
+## License and disclaimer
+
+The source code is available under the [MIT License](LICENSE). The logo,
+preview and DrapoMods branding are covered separately by the
+[artwork and branding license](ASSET-LICENSE.md).
+
+Settler Bubbles is an unofficial fan-made mod and is not affiliated with or
+endorsed by Fair Games or Ludeon Studios. Necesse, RimWorld and their respective
+names and trademarks belong to their owners.
