@@ -2,10 +2,10 @@
 
 ## Repository and package
 
-- [ ] Confirm the mod ID, author, Necesse version and release version in `build.gradle`.
-- [ ] Check the logo/preview, README, changelog and licenses.
-- [ ] Run `gradlew.bat clean buildModJar` from a clean checkout.
-- [ ] Open the generated jar and confirm `mod.info`, `preview.png` and compiled classes are present.
+- [x] Confirm the mod ID, author, Necesse version and release version in `build.gradle`.
+- [x] Check the logo/preview, README, changelog and licenses.
+- [x] Run `gradlew.bat clean buildModJar` from a clean checkout.
+- [x] Open the generated jar and confirm `mod.info`, `preview.png` and compiled classes are present.
 
 ## In-game tests
 
@@ -23,7 +23,7 @@
 ## Private publication test
 
 - [ ] Upload the jar, preview, description and screenshots to a hidden Steam Workshop item.
-- [ ] Subscribe on a normal client and confirm Workshop installation works without local development files.
+- [x] Subscribe on a normal client and confirm Workshop installation works without local development files.
 - [ ] Re-test singleplayer and multiplayer from the Workshop installation.
 
 ## Public release

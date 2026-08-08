@@ -14,7 +14,7 @@ Created by [DrapoMods](https://github.com/drapomods).
 - Supports recruited settlers and visiting human NPCs.
 - Multi-turn conversations that remember whether the topic was a person, animal
   or food, including matching reactions and conclusions.
-- 160 personality-aware English lines without external AI services.
+- 160 personality-aware English dialogue lines.
 - Compact pixel speech bubbles, thought bubbles for needs and mood, and distinct
   combat shouts that follow their speaker.
 - Context for hunger, injuries, recreation, strikes, happiness, rain, night,
@@ -30,10 +30,9 @@ Created by [DrapoMods](https://github.com/drapomods).
 Settler Bubbles 1.0.0 targets Necesse 1.3.2. In multiplayer, install the same
 mod version on the host or dedicated server and on every connecting client.
 
-For manual installation, place the release jar in
+Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3779949320),
+or place the release jar manually in
 `%APPDATA%\Necesse\mods\` and enable Settler Bubbles in the game's Mods menu.
-Steam Workshop installation will become available with the first public
-release.
 
 ## Commands and settings
 
@@ -110,6 +109,7 @@ automatically.
 ## Support
 
 - Report bugs or request features through [GitHub Issues](https://github.com/drapomods/settler-bubbles/issues).
+- Download or subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3779949320).
 - Private contact: [drapomods@proton.me](mailto:drapomods@proton.me)
 - Reddit: [u/DrapoMods](https://www.reddit.com/user/DrapoMods/)
 - Discord: `DrapoMods`

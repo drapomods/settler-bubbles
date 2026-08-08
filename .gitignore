@@ -11,3 +11,9 @@ steam_appid.txt
 hs_err_pid*
 .DS_Store
 Thumbs.db
+
+# Private production sources and local promotional exports.
+/moddisplay.mp4
+/1169040_*.jpg
+/SettlerBubbles Village Hop.wav
+/promo/
