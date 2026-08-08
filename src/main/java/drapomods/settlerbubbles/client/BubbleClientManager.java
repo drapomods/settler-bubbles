@@ -1,11 +1,11 @@
-package draporid.settlerbubbles.client;
+package drapomods.settlerbubbles.client;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import draporid.settlerbubbles.BubbleCategory;
-import draporid.settlerbubbles.BubbleStyle;
+import drapomods.settlerbubbles.BubbleCategory;
+import drapomods.settlerbubbles.BubbleStyle;
 import necesse.entity.mobs.Mob;
 import necesse.level.maps.Level;
 

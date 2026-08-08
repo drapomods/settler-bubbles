@@ -1,9 +1,9 @@
-package draporid.settlerbubbles.network;
+package drapomods.settlerbubbles.network;
 
-import draporid.settlerbubbles.BubbleCategory;
-import draporid.settlerbubbles.BubbleStyle;
-import draporid.settlerbubbles.SettlerBubblesSettings;
-import draporid.settlerbubbles.client.BubbleClientManager;
+import drapomods.settlerbubbles.BubbleCategory;
+import drapomods.settlerbubbles.BubbleStyle;
+import drapomods.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.client.BubbleClientManager;
 import necesse.engine.localization.message.GameMessage;
 import necesse.engine.network.NetworkPacket;
 import necesse.engine.network.Packet;

@@ -1,4 +1,4 @@
-package draporid.settlerbubbles;
+package drapomods.settlerbubbles;
 
 public enum BubbleFrequency {
     LOW(0.55F),
@@ -11,4 +11,3 @@ public enum BubbleFrequency {
         this.multiplier = multiplier;
     }
 }
-

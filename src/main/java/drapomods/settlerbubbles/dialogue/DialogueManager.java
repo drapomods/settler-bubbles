@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.dialogue;
+package drapomods.settlerbubbles.dialogue;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import draporid.settlerbubbles.BubbleCategory;
-import draporid.settlerbubbles.SettlerBubblesSettings;
-import draporid.settlerbubbles.network.SpeechBubblePacket;
+import drapomods.settlerbubbles.BubbleCategory;
+import drapomods.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.network.SpeechBubblePacket;
 import necesse.engine.localization.message.GameMessage;
 import necesse.engine.localization.message.LocalMessage;
 import necesse.engine.localization.message.StaticMessage;

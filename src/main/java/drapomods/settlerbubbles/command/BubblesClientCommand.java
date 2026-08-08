@@ -1,6 +1,6 @@
-package draporid.settlerbubbles.command;
+package drapomods.settlerbubbles.command;
 
-import draporid.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.SettlerBubblesSettings;
 import necesse.engine.commands.CmdParameter;
 import necesse.engine.commands.CommandLog;
 import necesse.engine.commands.ModularChatCommand;
@@ -33,4 +33,3 @@ public class BubblesClientCommand extends ModularChatCommand {
                 + (SettlerBubblesSettings.enabled ? "enabled" : "disabled") + ".");
     }
 }
-

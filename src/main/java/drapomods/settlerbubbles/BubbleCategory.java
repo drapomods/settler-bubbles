@@ -1,4 +1,4 @@
-package draporid.settlerbubbles;
+package drapomods.settlerbubbles;
 
 public enum BubbleCategory {
     SOCIAL,
@@ -12,4 +12,3 @@ public enum BubbleCategory {
         return id >= 0 && id < values.length ? values[id] : null;
     }
 }
-

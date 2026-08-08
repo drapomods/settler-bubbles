@@ -1,6 +1,6 @@
-package draporid.settlerbubbles.api;
+package drapomods.settlerbubbles.api;
 
-import draporid.settlerbubbles.BubbleStyle;
+import drapomods.settlerbubbles.BubbleStyle;
 import necesse.engine.localization.message.GameMessage;
 import necesse.engine.localization.message.LocalMessage;
 
@@ -83,4 +83,3 @@ public final class BubbleLine {
         }
     }
 }
-

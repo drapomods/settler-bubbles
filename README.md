@@ -4,6 +4,8 @@ Settler Bubbles is a Necesse 1.3.2 mod inspired by RimWorld's Interaction Bubble
 It turns the game's existing settler chatter into readable conversations and adds
 short contextual lines for social life, work, needs, mood, weather and combat.
 
+Created by [DrapoMods](https://github.com/drapomods).
+
 ## Features
 
 - Shared, server-selected dialogue in singleplayer and multiplayer.
@@ -23,8 +25,8 @@ short contextual lines for social life, work, needs, mood, weather and combat.
 
 ## Java API
 
-The public API is in `draporid.settlerbubbles.api`. Add-on mods should declare
-`draporid.settlerbubbles` as a dependency and can check
+The public API is in `drapomods.settlerbubbles.api`. Add-on mods should declare
+`drapomods.settlerbubbles` as a dependency and can check
 `SettlerBubblesAPI.API_VERSION` before registering integrations.
 
 Show one bubble directly from server-side code:

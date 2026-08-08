@@ -1,4 +1,4 @@
-package draporid.settlerbubbles.client;
+package drapomods.settlerbubbles.client;
 
 import java.awt.Color;
 import java.awt.Point;
@@ -6,9 +6,9 @@ import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
 
-import draporid.settlerbubbles.BubbleCategory;
-import draporid.settlerbubbles.BubbleStyle;
-import draporid.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.BubbleCategory;
+import drapomods.settlerbubbles.BubbleStyle;
+import drapomods.settlerbubbles.SettlerBubblesSettings;
 import necesse.engine.Settings;
 import necesse.engine.gameLoop.tickManager.TickManager;
 import necesse.gfx.GameColor;
