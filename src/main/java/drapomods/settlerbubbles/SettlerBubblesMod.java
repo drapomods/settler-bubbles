@@ -1,6 +1,7 @@
 package drapomods.settlerbubbles;
 
 import drapomods.settlerbubbles.command.BubblesClientCommand;
+import drapomods.settlerbubbles.client.BubbleControls;
 import drapomods.settlerbubbles.network.SpeechBubblePacket;
 import necesse.engine.commands.CommandsManager;
 import necesse.engine.modLoader.ModSettings;
@@ -15,6 +16,7 @@ public class SettlerBubblesMod {
 
     public void init() {
         PacketRegistry.registerPacket(SpeechBubblePacket.class);
+        BubbleControls.register();
     }
 
     public void postInit() {

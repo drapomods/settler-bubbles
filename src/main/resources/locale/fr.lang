@@ -1,0 +1,224 @@
+[settlerbubbles]
+settings_title=Paramètres de Settler Bubbles
+settings_language=Langue : <language> - <status>
+language_available=traduction disponible
+language_fallback=texte anglais par défaut
+section_general=Général
+enabled_session=Activer les bulles pour cette session
+frequency=Fréquence
+frequency_low=Faible
+frequency_normal=Normale
+frequency_high=Élevée
+duration=Durée
+distance=Distance de visibilité
+section_visuals=Texte et bulles
+font_type=Type de police
+font_game_default=Police du jeu
+font_pixel=Pixels
+font_smooth=Lisse
+font_size=Taille de la police
+font_size_value=<size> px
+auto_detect=Détection automatique pour cette résolution
+section_categories=Catégories de dialogues
+category_social=Social
+category_work=Travail
+category_needs=Besoins
+category_mood=Humeur
+category_combat=Combat
+section_density=Limite intelligente des bulles
+max_visible=Nombre maximal de bulles visibles
+density_help=Les bulles importantes et proches sont prioritaires lorsque l'écran est chargé.
+settings_help=Utilisez /bubbles settings pour ouvrir ce menu. Vous pouvez attribuer un raccourci facultatif dans les commandes.
+bubble_language=Langue des bulles
+language_game=Utiliser la langue du jeu
+reset_defaults=Réinitialiser les valeurs par défaut
+cancel=Annuler
+save=Enregistrer
+control_settings=Ouvrir les paramètres de Settler Bubbles
+
+social_person1=As-tu parlé avec <other> récemment ?
+social_person2=Je me demande comment va <other>.
+social_person3=<other> a toujours une histoire intéressante.
+social_person4=Tu sais ce que <other> a dit l'autre jour ?
+social_person_energetic1=On devrait aussi faire participer <other> !
+social_person_refined1=<other> a des opinions plutôt fascinantes.
+
+social_animal1=J'ai vu un <animal> à proximité plus tôt.
+social_animal2=Tu aimes les <animal> ? Je trouve ces animaux charmants.
+social_animal3=Imagine qu'on garde un <animal> dans la colonie.
+social_animal4=Un <animal> a croisé mon chemin aujourd'hui.
+social_animal_gentle1=J'espère que ce petit <animal> est en sécurité là-bas.
+
+social_food1=J'ai vraiment envie de <food>.
+social_food2=Que penses-tu de <food> ?
+social_food3=Rien ne rapproche les gens comme <food>.
+social_food4=J'ai pensé à <food> toute la journée.
+social_food_refined1=Bien préparé, <food> peut être délicieux.
+
+social_positive1=C'est exactement ce que je pensais !
+social_positive2=Tu marques un très bon point, <other>.
+social_positive3=Ha, je savais que tu comprendrais.
+social_positive4=Nous sommes plus souvent d’accord que tu ne le penses.
+social_positive_energetic1=Oui ! Voilà ce que j'aime entendre !
+social_positive_gentle1=Ça me fait plaisir que nous soyons du même avis, <other>.
+
+social_negative1=Je n'en suis pas convaincu.
+social_negative2=Nous devrons peut-être être en désaccord, <other>.
+social_negative3=Cela ne me semble pas correct.
+social_negative4=Je le vois plutôt différemment.
+social_negative_tough1=Non, je maintiens ma position sur ce point.
+social_negative_stressed1=On peut éviter de se disputer là-dessus maintenant, s'il te plaît ?
+
+social_followup1=Heureux que nous ayons réglé ça.
+social_followup2=Bonne conversation, <other>.
+social_followup3=Eh bien, cela a rendu la journée plus intéressante.
+social_followup4=Continuons cela une autre fois.
+
+social_person_positive1=J'ai parlé avec <topic> ce matin. Nous avons bien ri.
+social_person_positive2=<topic> a toujours été sympa avec moi.
+social_person_positive3=J'aime bien <topic>, qui rend cet endroit plus accueillant.
+social_person_positive4=Tu as raison. <topic> est de bonne compagnie.
+social_person_negative1=Je ne suis pas si sûr de <topic>.
+social_person_negative2=<topic> et moi ne sommes pas exactement d’accord.
+social_person_negative3=Je préfère garder mes distances avec <topic>.
+social_person_negative4=Tu peux faire confiance à <topic>, mais j'ai encore des doutes.
+social_person_followup_positive1=Peut-être devrions-nous inviter <topic> à nous rejoindre la prochaine fois.
+social_person_followup_positive2=Ça me fait plaisir que tu apprécies aussi <topic>.
+social_person_followup_positive3=Alors nous sommes d'accord : <topic> mérite d'être mieux connu.
+social_person_followup_negative1=Laissons <topic> de notre prochaine conversation.
+social_person_followup_negative2=Nous voyons clairement <topic> très différemment.
+social_person_followup_negative3=Peut-être devrions-nous changer de sujet avant que <topic> nous entende.
+
+social_animal_positive1=<topic> est magnifique. Je m'arrête toujours pour regarder.
+social_animal_positive2=J'ai vu <topic> aussi ! L'animal avait l'air parfaitement satisfait.
+social_animal_positive3=Nous devrions offrir à <topic> un endroit sûr où se promener.
+social_animal_positive4=Un <topic> peut égayer même une journée difficile.
+social_animal_negative1=Je ne fais absolument pas confiance à <topic>.
+social_animal_negative2=<topic> se retrouve sans cesse là où il ne faut pas.
+social_animal_negative3=Je préférerais que <topic> reste loin de ma chambre.
+social_animal_negative4=Charmant ? Pour moi, <topic> est surtout une source d'ennuis.
+social_animal_followup_positive1=La prochaine fois que nous verrons <topic>, regardons de plus près.
+social_animal_followup_positive2=Peut-être que <topic> reviendra nous voir demain.
+social_animal_followup_positive3=Je savais que tu comprendrais pourquoi j'aime <topic>.
+social_animal_followup_negative1=Très bien, je garderai <topic> loin de tes affaires.
+social_animal_followup_negative2=Nous pouvons donc admirer <topic> à bonne distance.
+social_animal_followup_negative3=Je suppose que <topic> ne plaît pas à tout le monde.
+
+social_food_positive1=<topic> semble merveilleux en ce moment.
+social_food_positive2=Enfin quelqu'un d'autre qui apprécie <topic>.
+social_food_positive3=J'ai mangé <topic> récemment. C'était délicieux.
+social_food_positive4=Nous devrions partager quelques <topic> après le travail.
+social_food_negative1=Honnêtement, j'en ai assez de <topic> depuis un moment.
+social_food_negative2=<topic> ? Je préfère avoir faim.
+social_food_negative3=Le dernier <topic> que j'ai mangé était profondément décevant.
+social_food_negative4=Tu peux prendre ma part de <topic>.
+social_food_followup_positive1=Ensuite, <topic> sera au menu de ce soir.
+social_food_followup_positive2=Si je trouve <topic>, je t'en garderai.
+social_food_followup_positive3=Bien, c'est décidé : ce soir, on mange <topic>.
+social_food_followup_negative1=Plus de <topic> pour moi, alors.
+social_food_followup_negative2=Je me souviendrai de ne pas te proposer <topic>.
+social_food_followup_negative3=Nous ne serons peut-être jamais d'accord sur <topic>.
+
+work1=C'est une autre tâche accomplie.
+work2=Des mains stables facilitent le travail.
+work3=La colonie s'en portera mieux.
+work4=Un travail terminé, il reste encore beaucoup à faire.
+work_energetic1=Déjà fait ! Quelle est la prochaine étape ?
+work_tough1=Le travail acharné ne m’a jamais fait peur.
+work_refined1=Un résultat soigné, si je puis dire.
+
+work_farm1=Ces récoltes avancent bien.
+work_farm2=Un bon sol récompense les mains patientes.
+work_farm3=Cela devrait permettre de garder le garde-manger approvisionné.
+
+work_fish1=Ce n’est pas une mauvaise prise du tout.
+work_fish2=L'eau était généreuse aujourd'hui.
+work_fish3=Du poisson frais pour la colonie !
+
+work_craft1=Conçu pour durer.
+work_craft2=Cela s’est plutôt bien passé.
+work_craft3=Rien ne vaut faire quelque chose d'utile.
+
+work_wood1=Cela devrait nous donner suffisamment de bois.
+work_wood2=Un autre arbre mis à profit.
+work_wood3=Beaucoup de bois robuste ici.
+
+needs_hungry1=C'est mon estomac qui parle maintenant.
+needs_hungry2=Je dois bientôt trouver quelque chose à manger.
+needs_hungry3=Dis-moi qu'il nous reste encore à manger, s'il te plaît.
+needs_hungry4=Il est difficile de travailler le ventre vide.
+needs_hungry5=Même le pain rassis semble merveilleux en ce moment.
+needs_hungry_stressed1=Nourriture. Bientôt. Avant de perdre patience.
+
+mood_low1=Aujourd’hui, ça me demande beaucoup.
+mood_low2=J'aurais besoin d'un moment de calme.
+mood_low3=J'ai connu des jours meilleurs.
+mood_low4=J'essaie, mais c'est une journée difficile.
+mood_low5=Peut-être que demain sera plus facile.
+mood_low_gentle1=Je ne veux inquiéter personne, mais j'ai du mal.
+mood_low_stressed1=Tout me semble trop en ce moment.
+
+mood_high1=Cela s’annonce comme une belle journée.
+mood_high2=Tu sais, la vie ici est plutôt belle.
+mood_high3=Je suis heureux d'appeler cet endroit chez moi.
+mood_high4=Tout commence vraiment à se mettre en place.
+mood_high5=Je ne peux m'empêcher de sourire aujourd'hui.
+mood_high_energetic1=Quelle journée ! Je me sens imparable !
+mood_high_refined1=La colonie est particulièrement agréable aujourd'hui.
+
+combat_hit1=Aïe ! Je l'ai bien senti passer.
+combat_hit2=C'était beaucoup trop proche.
+combat_hit3=J'aurais besoin d'aide ici !
+combat_hit4=Tu vas le regretter !
+combat_hit5=Toujours debout !
+combat_hit_gentle1=Pourquoi personne ne peut-il jamais régler cela pacifiquement ?
+combat_hit_tough1=C'est tout ce que tu as ?
+combat_hit_stressed1=Non, non, ça va mal !
+
+combat_kill1=Menace éliminée.
+combat_kill2=La colonie est à nouveau sûre.
+combat_kill3=Et reste à terre !
+combat_kill4=Un souci de moins.
+combat_kill5=Ce fut la dernière erreur qu’il commettra.
+combat_kill_energetic1=Oui ! Est-ce que tout le monde a vu ça ?
+combat_kill_tough1=Il fallait choisir une cible plus facile.
+
+needs_injured1=Je devrais faire examiner ces blessures.
+needs_injured2=Chaque pas fait plus mal que le précédent.
+needs_injured3=Je ne suis pas en état de continuer ainsi.
+needs_injured4=Un bandage et un lit seraient merveilleux en ce moment.
+
+needs_recreation1=J'ai besoin d'une pause avant le prochain travail.
+needs_recreation2=Travailler, manger, dormir, recommencer. J'ai besoin de m'amuser.
+needs_recreation3=Je ne me souviens pas de la dernière fois où je me suis détendu.
+needs_recreation4=Un peu de récréation me ferait du bien.
+
+needs_strike1=Plus de travail jusqu'à ce que les choses s'améliorent ici.
+needs_strike2=Ils peuvent terminer le travail eux-mêmes pour une fois.
+needs_strike3=J'en ai assez. J'arrête de travailler.
+needs_strike4=Peut-être que maintenant quelqu'un écoutera nos plaintes.
+
+weather_rain1=La pluie donne une odeur fraîche à tout le village.
+weather_rain2=J'espère que nous avons apporté tout ce qui est important à l'intérieur.
+weather_rain3=Au moins les cultures apprécieront ce temps.
+weather_rain4=Encore une journée pluvieuse. Mieux vaut ne pas regarder la boue.
+
+weather_night1=La colonie est paisible à cette heure.
+weather_night2=Il se fait tard. Je devrais bientôt finir.
+weather_night3=L’obscurité au-delà des lumières semble toujours étrange.
+weather_night4=Un lit chaud me tente de plus en plus.
+
+activity_busy1=Je suis occupé avec <activity> en ce moment.
+activity_busy2=<activity> ne devrait pas prendre beaucoup plus de temps.
+activity_busy3=Retour à <activity>. Il y a encore du travail à faire.
+activity_busy4=J'espère que <activity> se passera bien aujourd'hui.
+
+visitor1=Cette colonie est plus intéressante que je ne le pensais.
+visitor2=Je me demande ce que ça serait de vivre ici.
+visitor3=Tout le monde semble savoir exactement ce qu’il fait.
+visitor4=Je devrais revenir ici lors de mon prochain voyage.
+
+idle1=Un moment de calme est un luxe rare.
+idle2=Je me demande si quelqu'un a besoin d'un coup de main.
+idle3=Rien d'urgent pour une fois. Cela semble inhabituel.
+idle4=Peut-être que je peux profiter de la vue pendant une minute.

@@ -1,0 +1,224 @@
+[settlerbubbles]
+settings_title=Settler Bubbles-instellingen
+settings_language=Taal: <language> - <status>
+language_available=vertaling beschikbaar
+language_fallback=Engelse reservetekst
+section_general=Algemeen
+enabled_session=Schakel bubbels in voor deze sessie
+frequency=Frequentie
+frequency_low=Laag
+frequency_normal=Normaal
+frequency_high=Hoog
+duration=Duur
+distance=Zichtafstand
+section_visuals=Tekst en bubbels
+font_type=Lettertype
+font_game_default=Standaard van het spel
+font_pixel=Pixel
+font_smooth=Glad
+font_size=Lettergrootte
+font_size_value=<size> px
+auto_detect=Automatische detectie voor deze resolutie
+section_categories=Dialoogcategorieën
+category_social=Sociaal
+category_work=Werk
+category_needs=Behoeften
+category_mood=Stemming
+category_combat=Gevecht
+section_density=Slimme bubbeldichtheid
+max_visible=Maximaal zichtbare bubbels
+density_help=Belangrijke bubbels en bubbels in de buurt hebben voorrang als het scherm druk wordt.
+settings_help=Open dit menu met /bubbles settings. Je kunt bij Besturing optioneel een sneltoets instellen.
+bubble_language=Taal van tekstballonnen
+language_game=Taal van het spel gebruiken
+reset_defaults=Standaardwaarden opnieuw instellen
+cancel=Annuleer
+save=Opslaan
+control_settings=Open Settler Bubbles-instellingen
+
+social_person1=Heb je de laatste tijd met <other> gesproken?
+social_person2=Ik vraag me af hoe het met <other> gaat.
+social_person3=<other> heeft altijd een interessant verhaal.
+social_person4=Weet je wat <other> laatst zei?
+social_person_energetic1=We moeten <other> hier ook bij betrekken!
+social_person_refined1=<other> heeft nogal fascinerende meningen.
+
+social_animal1=Ik zag eerder een <animal> in de buurt.
+social_animal2=Wat vind je van <animal>? Ik vind zulke dieren leuk.
+social_animal3=Stel je voor dat je een <animal> rond de nederzetting houdt.
+social_animal4=Een <animal> kruiste vandaag mijn pad.
+social_animal_gentle1=Ik hoop dat de kleine <animal> daar veilig is.
+
+social_food1=Ik heb echt trek in <food>.
+social_food2=Wat vind je van <food>?
+social_food3=Niets brengt mensen zo samen als <food>.
+social_food4=Ik heb de hele dag aan <food> gedacht.
+social_food_refined1=Een goed bereid <food> kan heerlijk zijn.
+
+social_positive1=Dat is precies wat ik dacht!
+social_positive2=Je maakt een heel goed punt, <other>.
+social_positive3=Haha, ik wist dat je het zou begrijpen.
+social_positive4=We zijn het vaker eens dan je denkt.
+social_positive_energetic1=Ja! Dat is nou wat ik graag hoor!
+social_positive_gentle1=Ik ben blij dat we het op dezelfde manier zien, <other>.
+
+social_negative1=Daar ben ik niet van overtuigd.
+social_negative2=Daarover zullen we het oneens moeten blijven, <other>.
+social_negative3=Dat lijkt mij niet juist.
+social_negative4=Ik zie het nogal anders.
+social_negative_tough1=Nee. Ik blijf bij mijn standpunt.
+social_negative_stressed1=Kunnen we hier alsjeblieft nu geen ruzie over maken?
+
+social_followup1=Fijn dat we dat hebben opgelost.
+social_followup2=Goed gesprek, <other>.
+social_followup3=Nou, dat maakte de dag interessanter.
+social_followup4=Laten we dit een andere keer voortzetten.
+
+social_person_positive1=Ik heb vanochtend met <topic> gesproken. We hebben goed gelachen.
+social_person_positive2=<topic> is altijd aardig voor me geweest.
+social_person_positive3=Ik mag <topic> wel; die maakt deze plek een stuk gezelliger.
+social_person_positive4=Je hebt gelijk. <topic> is goed gezelschap.
+social_person_negative1=Ik ben niet zo zeker van <topic>.
+social_person_negative2=<topic> en ik zijn het niet bepaald eens geworden.
+social_person_negative3=Ik houd liever afstand van <topic>.
+social_person_negative4=Je kunt <topic> vertrouwen, maar ik twijfel nog steeds.
+social_person_followup_positive1=Misschien moeten we <topic> de volgende keer uitnodigen om met ons mee te doen.
+social_person_followup_positive2=Ik ben blij dat je <topic> ook waardeert.
+social_person_followup_positive3=Dan zijn we het erover eens: <topic> is de moeite waard om te leren kennen.
+social_person_followup_negative1=Laten we <topic> buiten ons volgende gesprek houden.
+social_person_followup_negative2=Wij zien <topic> duidelijk heel anders.
+social_person_followup_negative3=Misschien moeten we van onderwerp veranderen voordat <topic> ons hoort.
+
+social_animal_positive1=<topic> is prachtig. Ik blijf altijd staan om ernaar te kijken.
+social_animal_positive2=Ik zag die <topic> ook! Het dier zag er volkomen tevreden uit.
+social_animal_positive3=We moeten ervoor zorgen dat de <topic> een veilige plek heeft om rond te dwalen.
+social_animal_positive4=Een <topic> kan zelfs een moeilijke dag opvrolijken.
+social_animal_negative1=Ik vertrouw die <topic> voor geen meter.
+social_animal_negative2=Die <topic> komt steeds waar hij niet zou moeten zijn.
+social_animal_negative3=Ik zou liever hebben dat de <topic> uit mijn kamer bleef.
+social_animal_negative4=Charmant? Dat <topic> lijkt mij een probleem.
+social_animal_followup_positive1=De volgende keer dat we de <topic> zien, gaan we er eens nader naar kijken.
+social_animal_followup_positive2=Misschien komt de <topic> morgen weer bij ons langs.
+social_animal_followup_positive3=Ik wist dat je zou begrijpen waarom ik die <topic> leuk vind.
+social_animal_followup_negative1=Prima, ik zal de <topic> uit de buurt van je spullen houden.
+social_animal_followup_negative2=We kunnen de <topic> dan vanaf een veilige afstand bewonderen.
+social_animal_followup_negative3=Ik veronderstel dat de <topic> niet voor iedereen geschikt is.
+
+social_food_positive1=<topic> klinkt op dit moment geweldig.
+social_food_positive2=Eindelijk iemand anders die <topic> kan waarderen.
+social_food_positive3=Ik heb laatst <topic> gegeten. Het was heerlijk.
+social_food_positive4=We zouden na het werk wat <topic> moeten delen.
+social_food_negative1=Eerlijk gezegd heb ik al een tijdje genoeg van <topic>.
+social_food_negative2=<topic>? Ik zou liever honger lijden.
+social_food_negative3=De laatste <topic> die ik at was diep teleurstellend.
+social_food_negative4=Je mag mijn deel van <topic> krijgen.
+social_food_followup_positive1=Dan staat <topic> vanavond op het menu.
+social_food_followup_positive2=Als ik <topic> vind, bewaar ik wat voor je.
+social_food_followup_positive3=Goed, afgesproken: vanavond eten we <topic>.
+social_food_followup_negative1=Meer <topic> voor mij dus.
+social_food_followup_negative2=Ik zal eraan denken je geen <topic> aan te bieden.
+social_food_followup_negative3=Het kan zijn dat we het nooit eens worden over <topic>.
+
+work1=Dat is weer een taak volbracht.
+work2=Met vaste handen gaat het werk vlot.
+work3=De nederzetting zal hier beter van worden.
+work4=Eén klus minder, nog veel meer te gaan.
+work_energetic1=Al klaar! Wat is het volgende?
+work_tough1=Hard werken heeft mij nooit bang gemaakt.
+work_refined1=Een keurig resultaat, als ik het zo mag zeggen.
+
+work_farm1=Deze gewassen schieten goed op.
+work_farm2=Goede grond beloont geduldige handen.
+work_farm3=Dat zou de voorraadkast bevoorraad moeten houden.
+
+work_fish1=Helemaal geen slechte vangst.
+work_fish2=Het water was genereus vandaag.
+work_fish3=Verse vis voor de nederzetting!
+
+work_craft1=Gemaakt om lang mee te gaan.
+work_craft2=Dat kwam mooi in elkaar te zitten.
+work_craft3=Er gaat niets boven iets nuttigs maken.
+
+work_wood1=Dat zou ons voldoende hout moeten opleveren.
+work_wood2=Weer een boom die goed gebruikt wordt.
+work_wood3=Er is hier veel stevig hout.
+
+needs_hungry1=Mijn maag doet nu het woord.
+needs_hungry2=Ik moet snel iets te eten vinden.
+needs_hungry3=Vertel me alsjeblieft dat we nog eten hebben.
+needs_hungry4=Het is moeilijk om op een lege maag te werken.
+needs_hungry5=Zelfs oud brood klinkt op dit moment heerlijk.
+needs_hungry_stressed1=Voedsel. Spoedig. Voordat ik mijn geduld verlies.
+
+mood_low1=Vandaag vergt veel van mij.
+mood_low2=Ik kan wel een rustig moment gebruiken.
+mood_low3=Ik heb betere dagen gehad.
+mood_low4=Ik probeer het, maar het is een zware dag.
+mood_low5=Misschien voelt alles morgen wat makkelijker.
+mood_low_gentle1=Ik wil niemand ongerust maken, maar ik heb het moeilijk.
+mood_low_stressed1=Alles voelt nu als teveel.
+
+mood_high1=Dit belooft een mooie dag te worden.
+mood_high2=Weet je, het leven hier is behoorlijk goed.
+mood_high3=Ik ben blij dat ik deze plek mijn thuis mag noemen.
+mood_high4=Alles begint echt op zijn plek te vallen.
+mood_high5=Ik blijf vandaag maar glimlachen.
+mood_high_energetic1=Wat een dag! Ik voel me niet te stoppen!
+mood_high_refined1=De nederzetting is vandaag bijzonder aangenaam.
+
+combat_hit1=Oei! Dat voelde ik zeker.
+combat_hit2=Dat was veel te dichtbij.
+combat_hit3=Ik kan hier wel wat hulp gebruiken!
+combat_hit4=Daar zul je spijt van krijgen!
+combat_hit5=Ik sta nog!
+combat_hit_gentle1=Waarom kan niemand dit ooit vreedzaam regelen?
+combat_hit_tough1=Is dat alles wat je hebt?
+combat_hit_stressed1=Nee, nee, dit gaat slecht!
+
+combat_kill1=Bedreiging aangepakt.
+combat_kill2=De nederzetting is weer veilig.
+combat_kill3=En blijf liggen!
+combat_kill4=Een zorg minder.
+combat_kill5=Dat was de laatste fout van die vijand.
+combat_kill_energetic1=Ja! Heeft iedereen dat gezien?
+combat_kill_tough1=Had een makkelijker doelwit moeten kiezen.
+
+needs_injured1=Ik moet deze wonden laten verzorgen.
+needs_injured2=Elke stap doet meer pijn dan de vorige.
+needs_injured3=Ik ben niet in staat dit vol te houden.
+needs_injured4=Een verband en een bed klinken nu heerlijk.
+
+needs_recreation1=Ik heb een pauze nodig voor de volgende klus.
+needs_recreation2=Werken, eten, slapen, herhalen. Ik heb iets leuks nodig.
+needs_recreation3=Ik kan me niet herinneren wanneer ik voor het laatst heb ontspannen.
+needs_recreation4=Een beetje ontspanning zou mij goed doen.
+
+needs_strike1=Geen werk meer totdat de zaken hier verbeteren.
+needs_strike2=Ze kunnen de klussen een keer zelf afmaken.
+needs_strike3=Ik heb er genoeg van. Ik leg het werk neer.
+needs_strike4=Misschien luistert nu iemand naar onze klachten.
+
+weather_rain1=Door de regen ruikt de hele nederzetting fris.
+weather_rain2=Ik hoop dat we al het belangrijke naar binnen hebben gebracht.
+weather_rain3=De gewassen zullen dit weer in ieder geval waarderen.
+weather_rain4=Alweer een natte dag. Ik kan maar beter niet naar de modder kijken.
+
+weather_night1=De nederzetting is op dit uur vredig.
+weather_night2=Het wordt laat. Ik zou snel klaar moeten zijn.
+weather_night3=De duisternis voorbij de lichten voelt altijd vreemd.
+weather_night4=Een warm bed klinkt elke minuut beter.
+
+activity_busy1=Ik ben momenteel bezig met <activity>.
+activity_busy2=<activity> zou niet veel langer moeten duren.
+activity_busy3=Terug naar <activity>. Er is nog werk aan de winkel.
+activity_busy4=Ik hoop dat <activity> vandaag soepel verloopt.
+
+visitor1=Deze nederzetting is interessanter dan ik had verwacht.
+visitor2=Ik vraag me af hoe het zou zijn om hier te wonen.
+visitor3=Iedereen lijkt precies te weten wat er moet gebeuren.
+visitor4=Ik zou deze plek op mijn volgende reis moeten onthouden.
+
+idle1=Een rustig moment is een zeldzame luxe.
+idle2=Ik vraag me af of iemand een handje hulp kan gebruiken.
+idle3=Voor één keer niets dringends. Dat voelt ongebruikelijk.
+idle4=Misschien kan ik even van het uitzicht genieten.

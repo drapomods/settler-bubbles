@@ -53,16 +53,20 @@ public class SpeechBubbleHud extends HudDrawElement {
     @Override
     public void init(HudManager manager) {
         startTime = getTime();
-        FontOptions font = new FontOptions(14).forcePixelFont();
+        int fontSize = SettlerBubblesSettings.fontSize == 0
+                ? 16
+                : SettlerBubblesSettings.fontSize;
+        FontOptions font = SettlerBubblesSettings.fontMode.apply(new FontOptions(fontSize));
         FairType type = new FairType().append(font, message);
         type.applyParsers(ChatMessage.getParsers(font));
-        int maxTextWidth = style == BubbleStyle.THOUGHT
+        int baseMaxTextWidth = style == BubbleStyle.THOUGHT
                 ? MAX_THOUGHT_TEXT_WIDTH
                 : MAX_TEXT_WIDTH;
+        int maxTextWidth = Math.round(baseMaxTextWidth * (fontSize / 14.0F));
         textDraw = type.getDrawOptions(FairType.TextAlign.LEFT, maxTextWidth, true, true);
         Rectangle bounds = textDraw.getBoundingBox();
         textWidth = Math.max(28, bounds.width);
-        textHeight = Math.max(14, bounds.height);
+        textHeight = Math.max(fontSize, bounds.height);
     }
 
     @Override
@@ -162,5 +166,13 @@ public class SpeechBubbleHud extends HudDrawElement {
 
     public long getCreatedAt() {
         return createdAt;
+    }
+
+    public BubbleCategory getCategory() {
+        return category;
+    }
+
+    public Mob getMob() {
+        return mob;
     }
 }

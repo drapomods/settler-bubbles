@@ -1,0 +1,224 @@
+[settlerbubbles]
+settings_title=Settler Bubbles 설정
+settings_language=언어: <language> - <status>
+language_available=번역 지원
+language_fallback=영어로 대체
+section_general=일반
+enabled_session=현재 세션에서 말풍선 사용
+frequency=표시 빈도
+frequency_low=낮음
+frequency_normal=보통
+frequency_high=높음
+duration=표시 시간
+distance=표시 거리
+section_visuals=글자와 말풍선
+font_type=글꼴
+font_game_default=게임 기본값
+font_pixel=픽셀
+font_smooth=부드럽게
+font_size=글자 크기
+font_size_value=<size> px
+auto_detect=현재 해상도에 맞게 자동 설정
+section_categories=대화 종류
+category_social=사교
+category_work=작업
+category_needs=욕구
+category_mood=기분
+category_combat=전투
+section_density=말풍선 자동 정리
+max_visible=최대 표시 개수
+density_help=화면이 복잡해지면 중요하거나 가까운 말풍선을 우선 표시합니다.
+settings_help=/bubbles settings로 이 화면을 열 수 있습니다. 조작 설정에서 선택 사항인 단축키를 지정할 수도 있습니다.
+bubble_language=말풍선 언어
+language_game=게임 언어에 맞추기
+reset_defaults=기본값으로 초기화
+cancel=취소
+save=저장
+control_settings=Settler Bubbles 설정 열기
+
+social_person1=최근에 <other>와 이야기해 봤어?
+social_person2=<other>는 어떻게 지내고 있을까.
+social_person3=<other>는 언제나 재미있는 이야기를 들려줘.
+social_person4=전에 <other>가 뭐라고 했는지 알아?
+social_person_energetic1=<other>도 같이 끼워 주자!
+social_person_refined1=<other>의 의견은 참 흥미롭더군.
+
+social_animal1=아까 근처에서 <animal>를 봤어.
+social_animal2=<animal> 좋아해? 꽤 귀엽던데.
+social_animal3=정착지에서 <animal>를 키우는 모습을 상상해 봐.
+social_animal4=오늘 <animal>가 내 앞을 지나갔어.
+social_animal_gentle1=저 작은 <animal>가 무사하면 좋겠어.
+
+social_food1=<food> 좀 먹고 싶다.
+social_food2=<food>에 대해 어떻게 생각해?
+social_food3=<food>만큼 사람들을 가깝게 만드는 것도 없지.
+social_food4=하루 종일 <food> 생각만 했어.
+social_food_refined1=제대로 준비한 <food>는 정말 훌륭하지.
+
+social_positive1=나도 바로 그 생각을 했어!
+social_positive2=좋은 지적이야, <other>.
+social_positive3=하, 네가 이해할 줄 알았어.
+social_positive4=생각보다 우리 의견이 자주 맞네.
+social_positive_energetic1=그래! 바로 그런 말을 듣고 싶었어!
+social_positive_gentle1=같은 생각이라 기뻐, <other>.
+
+social_negative1=그건 잘 모르겠는데.
+social_negative2=그 점은 의견이 다른 것 같아, <other>.
+social_negative3=내 생각에는 맞지 않는 것 같아.
+social_negative4=나는 좀 다르게 봐.
+social_negative_tough1=아니. 이 일만큼은 물러서지 않겠어.
+social_negative_stressed1=지금은 제발 다투지 않으면 안 될까?
+
+social_followup1=잘 해결돼서 다행이야.
+social_followup2=좋은 이야기였어, <other>.
+social_followup3=덕분에 오늘이 좀 더 재미있어졌네.
+social_followup4=다음에 이어서 이야기하자.
+
+social_person_positive1=오늘 아침 <topic>와 이야기했어. 같이 한참 웃었지.
+social_person_positive2=<topic>는 언제나 나한테 친절했어.
+social_person_positive3=<topic>가 좋아. 이곳을 편안하게 느끼게 해 주거든.
+social_person_positive4=맞아. <topic>는 함께 있으면 즐거운 사람이야.
+social_person_negative1=<topic>에 대해서는 잘 모르겠어.
+social_person_negative2=<topic>와 나는 의견이 잘 맞지 않아.
+social_person_negative3=<topic>와는 거리를 두고 싶어.
+social_person_negative4=너는 <topic>를 믿을지 몰라도, 나는 아직 의심스러워.
+social_person_followup_positive1=다음에는 <topic>도 같이 부를까?
+social_person_followup_positive2=너도 <topic>를 좋게 봐 줘서 기뻐.
+social_person_followup_positive3=그럼 의견이 같네. <topic>는 알아 둘 만한 사람이야.
+social_person_followup_negative1=다음 대화에서는 <topic> 이야기를 빼자.
+social_person_followup_negative2=<topic>를 보는 관점이 정말 다르네.
+social_person_followup_negative3=<topic>가 듣기 전에 주제를 바꾸는 게 좋겠어.
+
+social_animal_positive1=<topic>는 정말 귀여워. 보이면 늘 멈춰서 보게 돼.
+social_animal_positive2=나도 그 <topic> 봤어! 아주 만족스러워 보이더라.
+social_animal_positive3=<topic>가 안전하게 돌아다닐 곳을 마련해 줘야 해.
+social_animal_positive4=<topic>를 보면 힘든 날에도 기분이 밝아져.
+social_animal_negative1=난 저 <topic>를 조금도 못 믿겠어.
+social_animal_negative2=저 <topic>는 자꾸 들어가면 안 되는 곳에 들어가.
+social_animal_negative3=<topic>가 내 방 근처에는 오지 않았으면 좋겠어.
+social_animal_negative4=귀엽다고? 저 <topic>는 문제를 일으킬 것 같은데.
+social_animal_followup_positive1=다음에 <topic>를 보면 가까이서 살펴보자.
+social_animal_followup_positive2=내일도 <topic>가 찾아올지 몰라.
+social_animal_followup_positive3=내가 저 <topic>를 좋아하는 이유를 이해할 줄 알았어.
+social_animal_followup_negative1=알았어. <topic>가 네 물건에 가까이 가지 않게 할게.
+social_animal_followup_negative2=그럼 안전한 거리에서 <topic>를 구경하자.
+social_animal_followup_negative3=<topic>가 누구에게나 좋은 건 아닌가 봐.
+
+social_food_positive1=지금 <topic>라면 정말 좋겠다.
+social_food_positive2=드디어 맛있는 <topic>의 가치를 아는 사람이 있네.
+social_food_positive3=얼마 전에 <topic>를 먹었어. 정말 맛있더라.
+social_food_positive4=일이 끝나면 <topic>를 같이 나눠 먹자.
+social_food_negative1=솔직히 당분간 <topic>는 충분히 먹은 것 같아.
+social_food_negative2=<topic>? 그럴 바에는 굶는 게 낫겠어.
+social_food_negative3=지난번에 먹은 <topic>는 정말 실망스러웠어.
+social_food_negative4=내 <topic> 몫도 네가 먹어.
+social_food_followup_positive1=그럼 오늘 저녁 메뉴는 <topic>로 정하자.
+social_food_followup_positive2=<topic>를 찾으면 네 몫도 남겨 둘게.
+social_food_followup_positive3=좋아, 결정했어. <topic>를 먹자.
+social_food_followup_negative1=그럼 내가 <topic>를 더 먹지 뭐.
+social_food_followup_negative2=너한테는 <topic>를 권하지 않도록 기억할게.
+social_food_followup_negative3=<topic>에 대해서는 영원히 의견이 안 맞을지도 몰라.
+
+work1=일 하나를 또 끝냈군.
+work2=침착하게 하면 어려운 일도 쉬워지지.
+work3=이 일로 정착지가 더 나아질 거야.
+work4=한 가지 끝냈지만, 아직 할 일이 많아.
+work_energetic1=벌써 끝났어! 다음은 뭐야?
+work_tough1=힘든 일쯤은 두렵지 않아.
+work_refined1=내가 봐도 깔끔한 결과군.
+
+work_farm1=작물이 잘 자라고 있어.
+work_farm2=좋은 흙은 끈기 있게 돌본 만큼 보답하지.
+work_farm3=이 정도면 식량 창고도 든든하겠어.
+
+work_fish1=제법 괜찮은 물고기를 잡았어.
+work_fish2=오늘은 물고기가 잘 잡히네.
+work_fish3=정착지에 신선한 생선을 가져가자!
+
+work_craft1=오래 쓰도록 만들었어.
+work_craft2=제법 잘 완성됐군.
+work_craft3=쓸모 있는 물건을 만드는 게 최고지.
+
+work_wood1=이 정도면 목재는 충분하겠어.
+work_wood2=이 나무도 유용하게 쓰겠군.
+work_wood3=튼튼한 목재가 잔뜩 있어.
+
+needs_hungry1=이제 배에서 나는 소리밖에 안 들려.
+needs_hungry2=곧 먹을 걸 찾아야겠어.
+needs_hungry3=아직 음식이 남아 있다고 말해 줘.
+needs_hungry4=빈속으로는 일하기 힘들어.
+needs_hungry5=지금은 딱딱한 빵도 맛있게 느껴지겠어.
+needs_hungry_stressed1=음식. 빨리. 인내심을 잃기 전에.
+
+mood_low1=오늘은 정말 기운 빠지는 날이야.
+mood_low2=잠깐 조용히 쉬고 싶어.
+mood_low3=더 나았던 때도 있었지.
+mood_low4=노력하고 있지만, 오늘은 힘든 날이야.
+mood_low5=내일은 좀 더 나아지면 좋겠어.
+mood_low_gentle1=아무도 걱정시키고 싶지 않지만, 지금은 힘들어.
+mood_low_stressed1=지금은 모든 게 너무 버겁게 느껴져.
+
+mood_high1=오늘은 좋은 날이 될 것 같아.
+mood_high2=여기서 사는 것도 꽤 괜찮네.
+mood_high3=이곳을 고향이라고 부를 수 있어서 기뻐.
+mood_high4=모든 게 정말 잘 풀리고 있어.
+mood_high5=오늘은 웃음이 절로 나와.
+mood_high_energetic1=정말 멋진 날이야! 누구도 날 막을 수 없겠어!
+mood_high_refined1=오늘은 정착지가 유난히 평온하군.
+
+combat_hit1=아야! 방금 건 제대로 맞았어.
+combat_hit2=너무 아슬아슬했어.
+combat_hit3=여기 좀 도와줘!
+combat_hit4=후회하게 해 주지!
+combat_hit5=아직 멀쩡해!
+combat_hit_gentle1=왜 아무도 평화롭게 해결하지 못하는 거야?
+combat_hit_tough1=그게 전부냐?
+combat_hit_stressed1=안 돼, 안 돼, 상황이 너무 안 좋아!
+
+combat_kill1=위협은 처리했어.
+combat_kill2=정착지가 다시 안전해졌어.
+combat_kill3=그대로 쓰러져 있어!
+combat_kill4=걱정거리 하나가 줄었군.
+combat_kill5=그게 마지막 실수였어.
+combat_kill_energetic1=좋았어! 다들 봤어?
+combat_kill_tough1=더 쉬운 상대를 골랐어야지.
+
+needs_injured1=이 상처를 치료받아야겠어.
+needs_injured2=걸음을 내디딜 때마다 더 아파.
+needs_injured3=이 상태로는 계속할 수 없어.
+needs_injured4=지금은 붕대와 침대만 있으면 좋겠어.
+
+needs_recreation1=다음 일 전에 좀 쉬어야겠어.
+needs_recreation2=일하고, 먹고, 자고, 또 반복. 재미있는 게 필요해.
+needs_recreation3=마지막으로 편히 쉰 게 언제인지 기억도 안 나.
+needs_recreation4=잠깐 기분 전환을 하면 좋겠어.
+
+needs_strike1=여기 사정이 나아질 때까지 더는 일하지 않겠어.
+needs_strike2=이번에는 자기들이 직접 일을 끝내라지.
+needs_strike3=이제 충분해. 나도 맞서겠어.
+needs_strike4=이제는 누군가 우리 불만을 들어 줄지도 몰라.
+
+weather_rain1=비가 내리니 정착지 전체에서 상쾌한 냄새가 나.
+weather_rain2=중요한 건 전부 안으로 들여놨겠지.
+weather_rain3=적어도 작물은 이 날씨를 좋아하겠어.
+weather_rain4=또 비 오는 날이네. 진흙을 조심해야겠어.
+
+weather_night1=이 시간의 정착지는 평화롭네.
+weather_night2=늦어지고 있어. 곧 마무리해야겠어.
+weather_night3=불빛 너머의 어둠은 언제 봐도 낯설어.
+weather_night4=시간이 갈수록 따뜻한 침대가 더 그리워져.
+
+activity_busy1=지금은 <activity> 때문에 바빠.
+activity_busy2=<activity>는 오래 걸리지 않을 거야.
+activity_busy3=<activity>로 돌아가자. 아직 할 일이 남았어.
+activity_busy4=오늘 <activity>가 순조롭게 진행되면 좋겠어.
+
+visitor1=이 정착지는 생각보다 더 흥미롭네.
+visitor2=여기서 사는 건 어떤 기분일까.
+visitor3=모두 자기가 할 일을 정확히 아는 것 같아.
+visitor4=다음 여행에서도 이곳을 기억해 둬야겠어.
+
+idle1=조용한 순간은 드문 사치지.
+idle2=누군가 도움을 필요로 하는지 궁금하네.
+idle3=오랜만에 급한 일이 없어. 이상한 기분이야.
+idle4=잠깐은 경치를 즐길 수 있겠어.

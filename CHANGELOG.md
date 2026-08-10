@@ -2,6 +2,34 @@
 
 All notable changes to Settler Bubbles are documented here.
 
+## [1.1.0] - 2026-08-10
+
+### Added
+
+- In-game settings menu opened with `/bubbles settings`.
+- Optional rebindable settings shortcut, left unbound by default to prevent
+  conflicts with other mods.
+- Automatic first-run font sizing for the current effective resolution.
+- Selectable 14-22 px text sizes and Game Default, Pixel and Smooth font modes.
+- Smart bubble density with configurable limits and priority for combat, needs
+  and nearby speakers.
+- Brazilian Portuguese, German, Spanish, French, Dutch, Polish, Russian,
+  Simplified Chinese, Japanese and Korean translations.
+- Manual bubble-language selection independent of the game's interface language.
+- Build-time locale validation for keys and replacement placeholders.
+
+### Changed
+
+- Bubble width now scales with font size to keep translated dialogue readable.
+- Client visual and density preferences now also apply to API-provided bubbles.
+- All included translations received a semantic review for mistranslated context
+  and overly literal wording.
+
+### Compatibility
+
+- Existing settings migrate automatically; saves and API version 1 remain
+  compatible.
+
 ## [1.0.0] - 2026-08-08
 
 ### Added

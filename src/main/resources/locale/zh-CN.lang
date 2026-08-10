@@ -1,0 +1,224 @@
+[settlerbubbles]
+settings_title=Settler Bubbles 设置
+settings_language=语言：<language> - <status>
+language_available=提供翻译
+language_fallback=使用英语
+section_general=常规
+enabled_session=本次游戏启用气泡
+frequency=频率
+frequency_low=低
+frequency_normal=正常
+frequency_high=高
+duration=显示时长
+distance=可见距离
+section_visuals=文本与气泡
+font_type=字体类型
+font_game_default=游戏默认字体
+font_pixel=像素
+font_smooth=光滑
+font_size=字体大小
+font_size_value=<size> 像素
+auto_detect=根据当前分辨率自动设置
+section_categories=对话类别
+category_social=社交
+category_work=工作
+category_needs=需求
+category_mood=心情
+category_combat=战斗
+section_density=智能气泡限制
+max_visible=最大可见气泡数
+density_help=屏幕拥挤时，重要和较近的气泡会优先显示。
+settings_help=使用 /bubbles settings 打开此菜单。你也可以在“控制”中设置可选快捷键。
+bubble_language=气泡语言
+language_game=跟随游戏语言
+reset_defaults=重置默认值
+cancel=取消
+save=保存
+control_settings=打开 Settler Bubbles 设置
+
+social_person1=最近和 <other> 聊过吗？
+social_person2=不知道 <other> 最近过得怎么样。
+social_person3=<other> 总有有趣的故事可讲。
+social_person4=你知道 <other> 前几天说了什么吗？
+social_person_energetic1=我们也该把 <other> 拉来一起聊！
+social_person_refined1=<other> 的见解相当有意思。
+
+social_animal1=我刚才在附近看到了一只 <animal>。
+social_animal2=你喜欢 <animal> 吗？我觉得这种动物很可爱。
+social_animal3=想象一下在聚落里养一只 <animal>。
+social_animal4=今天，一只 <animal> 从我面前经过。
+social_animal_gentle1=希望那只小 <animal> 在外面平安无事。
+
+social_food1=我现在真想吃点 <food>。
+social_food2=你觉得 <food> 怎么样？
+social_food3=没什么比 <food> 更能让大家聚在一起。
+social_food4=我一整天都在想着 <food>。
+social_food_refined1=精心烹制的 <food> 会非常美味。
+
+social_positive1=这正是我的想法！
+social_positive2=<other>，你说得很有道理。
+social_positive3=哈，我就知道你会理解的。
+social_positive4=我们意见一致的时候比你想象得多。
+social_positive_energetic1=对！这才是我想听的话！
+social_positive_gentle1=我很高兴我们有同样的看法，<other>。
+
+social_negative1=我对此并不确信。
+social_negative2=看来我们只能求同存异了，<other>。
+social_negative3=我觉得这话不太对。
+social_negative4=我的看法不太一样。
+social_negative_tough1=不，我在这一点上坚持自己的立场。
+social_negative_stressed1=现在能不能别为这个争了？
+
+social_followup1=很高兴我们解决了这个问题。
+social_followup2=聊得不错，<other>。
+social_followup3=嗯，这让这一天变得更有趣。
+social_followup4=下次再接着聊吧。
+
+social_person_positive1=今天早上我与 <topic> 进行了交谈。我们笑得很开心。
+social_person_positive2=<topic> 一直对我很好。
+social_person_positive3=我喜欢 <topic>，有对方在这里感觉更温馨。
+social_person_positive4=你说得对。<topic> 是个好伙伴。
+social_person_negative1=我对 <topic> 还是不太放心。
+social_person_negative2=我和 <topic> 的意见并不一致。
+social_person_negative3=我宁愿与 <topic> 保持距离。
+social_person_negative4=你也许信得过 <topic>，但我仍然心存疑虑。
+social_person_followup_positive1=也许我们下次应该邀请 <topic> 加入我们。
+social_person_followup_positive2=很高兴你也欣赏 <topic>。
+social_person_followup_positive3=那么我们意见一致：<topic> 值得结交。
+social_person_followup_negative1=下次聊天先别提 <topic> 了。
+social_person_followup_negative2=显然，我们对 <topic> 的看法截然不同。
+social_person_followup_negative3=也许该在 <topic> 听见之前换个话题。
+
+social_animal_positive1=<topic> 真漂亮。每次看到我都会停下来多看几眼。
+social_animal_positive2=我也看见 <topic> 了！它看起来悠闲极了。
+social_animal_positive3=应该给 <topic> 留个安全活动的地方。
+social_animal_positive4=就算日子再糟，看到 <topic> 也会开心些。
+social_animal_negative1=我一点也不信任 <topic>。
+social_animal_negative2=<topic> 老是跑到不该去的地方。
+social_animal_negative3=真希望 <topic> 别进我的房间。
+social_animal_negative4=可爱？我看 <topic> 只会惹麻烦。
+social_animal_followup_positive1=下次看到 <topic> 时，我们再仔细看看。
+social_animal_followup_positive2=也许 <topic> 明天还会过来。
+social_animal_followup_positive3=我就知道你会明白我为什么喜欢 <topic>。
+social_animal_followup_negative1=好吧，我会让 <topic> 离你的东西远点。
+social_animal_followup_negative2=那我们就保持安全距离欣赏 <topic> 吧。
+social_animal_followup_negative3=我想 <topic> 并不适合所有人。
+
+social_food_positive1=现在一听到 <topic> 就觉得很馋。
+social_food_positive2=总算有人和我一样懂得欣赏 <topic>。
+social_food_positive3=最近吃过 <topic>，非常美味。
+social_food_positive4=下工后我们应该分点 <topic> 吃。
+social_food_negative1=老实说，我最近已经吃腻 <topic> 了。
+social_food_negative2=<topic>？我宁愿挨饿。
+social_food_negative3=上次吃到的 <topic> 太让人失望了。
+social_food_negative4=我的那份 <topic> 归你了。
+social_food_followup_positive1=那么 <topic> 将出现在今晚的菜单上。
+social_food_followup_positive2=要是找到 <topic>，我会给你留一些。
+social_food_followup_positive3=好，就这么定：今晚吃 <topic>。
+social_food_followup_negative1=那我可要多吃一点 <topic> 了。
+social_food_followup_negative2=我会记住不拿 <topic> 招待你。
+social_food_followup_negative3=我们可能永远不会就 <topic> 达成一致。
+
+work1=又完成一项任务。
+work2=手稳，活就轻松。
+work3=聚落会因这项工作变得更好。
+work4=少一件活，还有很多要做。
+work_energetic1=已经完成了！接下来是什么？
+work_tough1=艰苦的工作从来没有让我害怕过。
+work_refined1=成果很漂亮，我自己都得夸一句。
+
+work_farm1=这些作物长势良好。
+work_farm2=好土壤回报耐心的双手。
+work_farm3=这应该可以保证食品储藏室的供应。
+
+work_fish1=这收获相当不错。
+work_fish2=今天水里的收获真不错。
+work_fish3=给聚落带回新鲜的鱼！
+
+work_craft1=经久耐用。
+work_craft2=这东西拼得还不错。
+work_craft3=没有什么比创造有用的东西更好的了。
+
+work_wood1=那应该会给我们足够的木材。
+work_wood2=又一棵树得到了很好的利用。
+work_wood3=这里有大量坚固的木材。
+
+needs_hungry1=我的肚子开始发话了。
+needs_hungry2=我需要尽快找点东西吃。
+needs_hungry3=请告诉我我们还有食物。
+needs_hungry4=空腹工作是很困难的。
+needs_hungry5=现在就连陈面包听起来都很美味。
+needs_hungry_stressed1=食物。马上。在我失去耐心之前。
+
+mood_low1=今天真让人疲惫。
+mood_low2=我想安静一会儿。
+mood_low3=今天不太顺。
+mood_low4=我已经尽力了，但今天实在难熬。
+mood_low5=也许明天会轻松一些。
+mood_low_gentle1=我不想让大家担心，但我现在确实不好受。
+mood_low_stressed1=现在什么事都让人喘不过气。
+
+mood_high1=这将是美好的一天。
+mood_high2=说真的，这里的生活相当不错。
+mood_high3=我很高兴把这个地方称为家。
+mood_high4=一切都在渐渐步入正轨。
+mood_high5=今天我忍不住微笑。
+mood_high_energetic1=好棒的一天！我觉得自己势不可挡！
+mood_high_refined1=今天的聚落格外宜人。
+
+combat_hit1=哎哟！这一下真疼。
+combat_hit2=太险了。
+combat_hit3=快来帮帮我！
+combat_hit4=你会后悔的！
+combat_hit5=我还站着！
+combat_hit_gentle1=为什么没有人能和平解决这个问题？
+combat_hit_tough1=你就这点本事？
+combat_hit_stressed1=不对，不对，情况不妙！
+
+combat_kill1=威胁解除。
+combat_kill2=定居点又安全了。
+combat_kill3=给我倒下别起来！
+combat_kill4=少了一个麻烦。
+combat_kill5=这是它将犯的最后一个错误。
+combat_kill_energetic1=好！你们都看到了吗？
+combat_kill_tough1=早该挑个容易对付的目标。
+
+needs_injured1=这些伤口得找人处理一下。
+needs_injured2=每走一步都比上一步更痛。
+needs_injured3=再这样下去我撑不住了。
+needs_injured4=现在能有绷带和床就好了。
+
+needs_recreation1=在下一份工作之前我需要休息一下。
+needs_recreation2=工作、吃饭、睡觉、重复。我得找点乐子。
+needs_recreation3=我不记得上次放松是什么时候了。
+needs_recreation4=稍微放松一下对我有好处。
+
+needs_strike1=这里的情况改善之前，我不干了。
+needs_strike2=这回让他们自己把活干完。
+needs_strike3=我受够了。我要罢工。
+needs_strike4=也许现在有人会倾听我们的抱怨。
+
+weather_rain1=雨水让整个聚落都散发着清新的气息。
+weather_rain2=我希望我们把重要的东西都带进去了。
+weather_rain3=至少庄稼会喜欢这样的天气。
+weather_rain4=又是下雨天。最好别看那些泥巴。
+
+weather_night1=深夜的聚落真安静。
+weather_night2=天色已晚。我应该尽快完成。
+weather_night3=灯光之外的黑暗总是让人感觉很奇怪。
+weather_night4=我越来越想念温暖的床了。
+
+activity_busy1=我现在正忙着 <activity>。
+activity_busy2=<activity> 应该不会花太长时间。
+activity_busy3=回去继续 <activity>。还有活要做。
+activity_busy4=我希望 <activity> 今天顺利。
+
+visitor1=这个聚落比我预想的更有意思。
+visitor2=我想知道住在这里会是什么样子。
+visitor3=每个人似乎都清楚地知道自己在做什么。
+visitor4=我应该在下次旅行时记住这个地方。
+
+idle1=安静的时刻是一种难得的奢侈。
+idle2=我想知道是否有人需要帮助。
+idle3=暂时没什么紧急的事情。这感觉不寻常。
+idle4=也许我可以欣赏一分钟的风景。

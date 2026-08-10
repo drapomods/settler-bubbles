@@ -1,0 +1,224 @@
+[settlerbubbles]
+settings_title=Настройки Settler Bubbles
+settings_language=Язык: <language> – <status>
+language_available=доступен перевод
+language_fallback=текст на английском
+section_general=Общие
+enabled_session=Включить реплики для этого сеанса
+frequency=Частота
+frequency_low=Низкая
+frequency_normal=Обычная
+frequency_high=Высокая
+duration=Продолжительность
+distance=Расстояние видимости
+section_visuals=Текст и реплики
+font_type=Тип шрифта
+font_game_default=Шрифт игры
+font_pixel=Пиксельный
+font_smooth=Сглаженный
+font_size=Размер шрифта
+font_size_value=<size> пикселей
+auto_detect=Автоопределение для этого разрешения
+section_categories=Категории диалогов
+category_social=Социальные
+category_work=Работа
+category_needs=Потребности
+category_mood=Настроение
+category_combat=Бой
+section_density=Умное ограничение реплик
+max_visible=Максимум видимых реплик
+density_help=Важные и ближайшие реплики имеют приоритет, когда экран заполнен.
+settings_help=Используйте /bubbles settings, чтобы открыть это меню. Дополнительную горячую клавишу можно назначить в настройках управления.
+bubble_language=Язык реплик
+language_game=Использовать язык игры
+reset_defaults=Сбросить настройки по умолчанию
+cancel=Отмена
+save=Сохранить
+control_settings=Открыть настройки Settler Bubbles
+
+social_person1=Давно общались с <other>?
+social_person2=Интересно, как поживает <other>?
+social_person3=У <other> всегда интересная история.
+social_person4=Знаешь, что <other> сказал на днях?
+social_person_energetic1=Нам тоже следует привлечь к этому <other>!
+social_person_refined1=У <other> весьма интересное мнение.
+
+social_animal1=Ранее я видел поблизости <animal>.
+social_animal2=Тебе нравятся такие животные, как <animal>? По-моему, они очаровательны.
+social_animal3=Представь, что в поселении живет <animal>.
+social_animal4=Сегодня мне на пути перешёл <animal>.
+social_animal_gentle1=Я надеюсь, что маленький <animal> там в безопасности.
+
+social_food1=Сейчас бы поесть <food>.
+social_food2=Что думаешь о <food>?
+social_food3=Ничто так не объединяет людей, как <food>.
+social_food4=Я весь день думал о <food>.
+social_food_refined1=Правильно приготовленная <food> может быть восхитительной.
+
+social_positive1=Именно об этом я и думал!
+social_positive2=Отличное замечание, <other>.
+social_positive3=Ха, я знал, что ты поймешь.
+social_positive4=Мы соглашаемся чаще, чем ты думаешь.
+social_positive_energetic1=Да! Вот это мне нравится слышать!
+social_positive_gentle1=Я рад, что мы видим это одинаково, <other>.
+
+social_negative1=Я в этом не уверен.
+social_negative2=Возможно, нам придется не согласиться, <other>.
+social_negative3=Мне это кажется неправильным.
+social_negative4=Я вижу это несколько иначе.
+social_negative_tough1=Нет. Я стою на своем.
+social_negative_stressed1=Можем ли мы сейчас не спорить об этом?
+
+social_followup1=Рад, что мы с этим разобрались.
+social_followup2=Хороший разговор, <other>.
+social_followup3=Что ж, это сделало день интереснее.
+social_followup4=Продолжим это в другой раз.
+
+social_person_positive1=Сегодня утром я разговаривал с <topic>. Мы от души посмеялись.
+social_person_positive2=<topic> всегда был добр ко мне.
+social_person_positive3=Мне нравится <topic>. С этим человеком здесь становится уютнее.
+social_person_positive4=Верно. <topic> — хорошая компания.
+social_person_negative1=Я не уверен насчет <topic>.
+social_person_negative2=<topic> и я не совсем сошлись во мнениях.
+social_person_negative3=Я бы предпочел держаться подальше от <topic>.
+social_person_negative4=Может, <topic> и можно доверять, но у меня все еще есть сомнения.
+social_person_followup_positive1=Возможно, нам стоит пригласить <topic> присоединиться к нам в следующий раз.
+social_person_followup_positive2=Приятно, что ты тоже ценишь <topic>.
+social_person_followup_positive3=Тогда мы согласны: <topic> стоит знать.
+social_person_followup_negative1=Давайте не будем упоминать <topic> в следующем разговоре.
+social_person_followup_negative2=Мы явно видим <topic> совершенно по-разному.
+social_person_followup_negative3=Возможно, нам следует сменить тему, прежде чем <topic> нас услышит.
+
+social_animal_positive1=<topic> — просто чудо. Всегда хочется остановиться и посмотреть.
+social_animal_positive2=Я тоже заметил <topic>! Животное выглядело совершенно довольным.
+social_animal_positive3=Мы должны убедиться, что <topic> есть где безопасно побродить.
+social_animal_positive4=<topic> может скрасить даже трудный день.
+social_animal_negative1=Я совсем не доверяю <topic>.
+social_animal_negative2=<topic> постоянно оказывается там, где не следует.
+social_animal_negative3=Не хочу видеть <topic> в своей комнате.
+social_animal_negative4=Очаровательно? По-моему, от <topic> одни неприятности.
+social_animal_followup_positive1=В следующий раз, когда мы увидим <topic>, давайте присмотримся к нему поближе.
+social_animal_followup_positive2=Возможно, завтра <topic> снова посетит нас.
+social_animal_followup_positive3=Вот видишь, почему мне нравится <topic>.
+social_animal_followup_negative1=Хорошо, не подпущу <topic> к твоим вещам.
+social_animal_followup_negative2=Тогда мы сможем любоваться <topic> с безопасного расстояния.
+social_animal_followup_negative3=Я полагаю, что <topic> не для всех.
+
+social_food_positive1=<topic> сейчас звучит замечательно.
+social_food_positive2=Наконец-то кто-то еще ценит <topic>.
+social_food_positive3=Недавно удалось попробовать <topic>. Было очень вкусно.
+social_food_positive4=Нам нужно поделиться <topic> после работы.
+social_food_negative1=Честно говоря, мне уже давно надоело <topic>.
+social_food_negative2=<topic>? Я бы предпочел остаться голодным.
+social_food_negative3=Последняя порция <topic> сильно меня разочаровала.
+social_food_negative4=Можешь забрать мою порцию <topic>.
+social_food_followup_positive1=Тогда в сегодняшнем меню появится <topic>.
+social_food_followup_positive2=Если найду <topic>, оставлю немного для тебя.
+social_food_followup_positive3=Хорошо, решено: сегодня едим <topic>.
+social_food_followup_negative1=Тогда для меня больше <topic>.
+social_food_followup_negative2=Я не забуду больше не предлагать тебе <topic>.
+social_food_followup_negative3=Возможно, мы никогда не придем к согласию по поводу <topic>.
+
+work1=Вот и еще одна задача готова.
+work2=Уверенные руки облегчают работу.
+work3=От этого поселение будет лучше.
+work4=Одна работа позади, еще много предстоит сделать.
+work_energetic1=Готово уже! Что дальше?
+work_tough1=Тяжелая работа меня никогда не пугала.
+work_refined1=Хороший результат, если можно так сказать.
+
+work_farm1=Эти культуры растут хорошо.
+work_farm2=Хорошая почва вознаграждает терпеливые руки.
+work_farm3=Это должно обеспечить снабжение кладовой.
+
+work_fish1=Вполне неплохой улов.
+work_fish2=Вода сегодня была щедрая.
+work_fish3=Свежая рыба для поселения!
+
+work_craft1=Сделано на века.
+work_craft2=Все отлично сошлось.
+work_craft3=Ничто не сравнится с созданием чего-то полезного.
+
+work_wood1=Это должно дать нам достаточно древесины.
+work_wood2=Еще одно дерево, использованное с пользой.
+work_wood3=Здесь много прочной древесины.
+
+needs_hungry1=Теперь за меня говорит желудок.
+needs_hungry2=Нужно поскорее найти что-нибудь поесть.
+needs_hungry3=Пожалуйста, скажи мне, что у нас еще есть еда.
+needs_hungry4=Трудно работать на пустой желудок.
+needs_hungry5=Даже черствый хлеб сейчас звучит чудесно.
+needs_hungry_stressed1=Еда. Быстро. Пока терпение не лопнуло.
+
+mood_low1=Сегодняшний день отнимает у меня много сил.
+mood_low2=Мне не помешала бы минутка тишины.
+mood_low3=Бывали дни и получше.
+mood_low4=Я пытаюсь, но это трудный день.
+mood_low5=Возможно, завтра станет легче.
+mood_low_gentle1=Мне не хочется никого тревожить, но сейчас тяжело.
+mood_low_stressed1=Сейчас всего слишком много.
+
+mood_high1=День обещает быть прекрасным.
+mood_high2=Знаешь, жизнь здесь довольно хорошая.
+mood_high3=Я рад назвать это место своим домом.
+mood_high4=Все действительно складывается.
+mood_high5=Я не могу сдержать улыбку сегодня.
+mood_high_energetic1=Какой день! Я чувствую себя неудержимым!
+mood_high_refined1=Сегодня поселение было особенно приятным.
+
+combat_hit1=Ай! Вот это было больно.
+combat_hit2=Это было слишком близко.
+combat_hit3=Мне могла бы пригодиться здесь помощь!
+combat_hit4=Ты об этом пожалеешь!
+combat_hit5=Все еще стою!
+combat_hit_gentle1=Почему никто никогда не сможет решить это мирным путем?
+combat_hit_tough1=Это все, что у тебя есть?
+combat_hit_stressed1=Нет, нет, дела идут плохо!
+
+combat_kill1=Угроза устранена.
+combat_kill2=Поселение снова в безопасности.
+combat_kill3=И оставайся внизу!
+combat_kill4=На одну вещь меньше, о чем стоит беспокоиться.
+combat_kill5=Эта ошибка стала последней.
+combat_kill_energetic1=Да! Все это видели?
+combat_kill_tough1=Надо было выбрать более легкую цель.
+
+needs_injured1=Надо бы показать эти раны врачу.
+needs_injured2=Каждый шаг причиняет боль сильнее предыдущего.
+needs_injured3=Я не в состоянии продолжать это.
+needs_injured4=Повязка и кровать сейчас были бы просто замечательны.
+
+needs_recreation1=Мне нужен перерыв перед следующей работой.
+needs_recreation2=Работай, ешь, спи, повторяй. Мне нужно что-нибудь веселое.
+needs_recreation3=Я не могу вспомнить, когда в последний раз расслаблялся.
+needs_recreation4=Небольшой отдых пойдет мне на пользу.
+
+needs_strike1=Больше никакой работы, пока здесь все не улучшится.
+needs_strike2=Хоть раз они могут закончить работу сами.
+needs_strike3=С меня хватит. Больше не работаю.
+needs_strike4=Может быть, теперь кто-то прислушается к нашим жалобам.
+
+weather_rain1=Дождь заставляет весь поселок пахнуть свежестью.
+weather_rain2=Надеюсь, мы принесли всё важное внутрь.
+weather_rain3=По крайней мере, посевы оценят такую погоду.
+weather_rain4=Еще один мокрый день. Лучше не смотреть на грязь.
+
+weather_night1=В этот час в поселении спокойно.
+weather_night2=Уже поздно. Я должен скоро закончить.
+weather_night3=Темнота за пределами света всегда кажется странной.
+weather_night4=Теплая постель с каждой минутой кажется все заманчивее.
+
+activity_busy1=Я сейчас занят <activity>.
+activity_busy2=<activity> не займет много времени.
+activity_busy3=Вернемся к <activity>. Еще есть над чем работать.
+activity_busy4=Надеюсь, сегодня <activity> пройдет гладко.
+
+visitor1=Это поселение интереснее, чем я ожидал.
+visitor2=Интересно, каково было бы здесь жить?
+visitor3=Кажется, что все точно знают, что делают.
+visitor4=В следующем путешествии стоит снова сюда заглянуть.
+
+idle1=Момент тишины – редкая роскошь.
+idle2=Интересно, нужна ли кому-нибудь помощь?
+idle3=На этот раз ничего срочного. Это кажется необычным.
+idle4=Может быть, я смогу насладиться видом на минуту.

@@ -63,12 +63,13 @@ public class SpeechBubblePacket extends Packet {
         if (mob == null || mob.removed()) {
             return;
         }
-        String translated = message.translate();
+        String translated = SettlerBubblesSettings.language.translate(message);
         if (translated == null || translated.trim().isEmpty()) {
             return;
         }
         int textDuration = Math.max(durationHint, 2200 + Math.min(3600, translated.length() * 55));
         int duration = (int)(textDuration * SettlerBubblesSettings.durationScale);
-        BubbleClientManager.show(level, mob, category, style, translated, duration);
+        BubbleClientManager.show(level, client.getPlayer(), mob,
+                category, style, translated, duration);
     }
 }

@@ -1,6 +1,7 @@
 package drapomods.settlerbubbles.command;
 
 import drapomods.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.client.BubbleSettingsMenuController;
 import necesse.engine.commands.CmdParameter;
 import necesse.engine.commands.CommandLog;
 import necesse.engine.commands.ModularChatCommand;
@@ -15,14 +16,19 @@ public class BubblesClientCommand extends ModularChatCommand {
         super("bubbles", "Toggle settler speech bubbles for this client.",
                 PermissionLevel.USER, false,
                 new CmdParameter("state",
-                        new PresetStringParameterHandler(true, "on", "off", "toggle"), true));
+                        new PresetStringParameterHandler(true, "on", "off", "toggle", "settings"), true));
     }
 
     @Override
     public void runModular(Client client, Server server, ServerClient serverClient,
                            Object[] args, String[] errors, CommandLog commandLog) {
         String state = args[0] instanceof String ? (String)args[0] : "toggle";
-        if ("on".equalsIgnoreCase(state)) {
+        if ("settings".equalsIgnoreCase(state)) {
+            if (!BubbleSettingsMenuController.open(client)) {
+                commandLog.add("Settler Bubbles settings can only be opened while playing.");
+            }
+            return;
+        } else if ("on".equalsIgnoreCase(state)) {
             SettlerBubblesSettings.enabled = true;
         } else if ("off".equalsIgnoreCase(state)) {
             SettlerBubblesSettings.enabled = false;
