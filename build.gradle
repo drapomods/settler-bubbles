@@ -4,7 +4,7 @@ plugins {
 
 project.ext.modID = 'drapomods.settlerbubbles'
 project.ext.modName = 'Settler Bubbles'
-project.ext.modVersion = '1.0.0'
+project.ext.modVersion = '1.1.0'
 project.ext.gameVersion = '1.3.2'
 project.ext.modDescription = 'Speech bubbles inspired by RimWorld that make settlers and visitors feel alive.'
 project.ext.author = 'DrapoMods'
@@ -94,6 +94,68 @@ tasks.register('preAntialiasTextures', JavaExec) {
     classpath = files(gameDirectory + '/Necesse.jar')
     getMainClass().set('PreAntialiasTextures')
     args '-folders', sourceSets.main.resources.srcDirs.stream().map { it.path }.toArray().join(';')
+}
+
+def supportedLocaleCodes = ['en', 'pt-BR', 'de', 'es', 'fr', 'nl', 'pl', 'ru', 'zh-CN', 'ja', 'kr']
+
+tasks.register('validateTranslations') {
+    group = 'verification'
+    description = 'Checks locale keys, values and replacement placeholders.'
+    inputs.files(supportedLocaleCodes.collect { file("src/main/resources/locale/${it}.lang") })
+    doLast {
+        def parseLocale = { File localeFile ->
+            if (!localeFile.exists()) {
+                throw new GradleException("Missing locale file: ${localeFile.name}")
+            }
+            def entries = new LinkedHashMap<String, String>()
+            def section = ''
+            localeFile.readLines('UTF-8').eachWithIndex { line, index ->
+                def trimmed = line.trim()
+                if (trimmed.isEmpty() || trimmed.startsWith('#')) {
+                    return
+                }
+                if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+                    section = trimmed.substring(1, trimmed.length() - 1)
+                    return
+                }
+                int separator = line.indexOf('=')
+                if (separator <= 0) {
+                    throw new GradleException("Invalid locale line ${localeFile.name}:${index + 1}")
+                }
+                def key = section + '.' + line.substring(0, separator).trim()
+                def value = line.substring(separator + 1).trim()
+                if (value.isEmpty()) {
+                    throw new GradleException("Empty translation for ${key} in ${localeFile.name}")
+                }
+                if (entries.put(key, value) != null) {
+                    throw new GradleException("Duplicate translation key ${key} in ${localeFile.name}")
+                }
+            }
+            return entries
+        }
+
+        def english = parseLocale(file('src/main/resources/locale/en.lang'))
+        supportedLocaleCodes.findAll { it != 'en' }.each { code ->
+            def translated = parseLocale(file("src/main/resources/locale/${code}.lang"))
+            def missing = english.keySet() - translated.keySet()
+            def extra = translated.keySet() - english.keySet()
+            if (!missing.isEmpty() || !extra.isEmpty()) {
+                throw new GradleException("Locale ${code} key mismatch. Missing: ${missing}; extra: ${extra}")
+            }
+            english.each { key, englishValue ->
+                def expectedPlaceholders = (englishValue =~ /<[A-Za-z0-9_]+>/).findAll().sort()
+                def actualPlaceholders = (translated[key] =~ /<[A-Za-z0-9_]+>/).findAll().sort()
+                if (expectedPlaceholders != actualPlaceholders) {
+                    throw new GradleException("Locale ${code} placeholder mismatch for ${key}: "
+                            + "expected ${expectedPlaceholders}, found ${actualPlaceholders}")
+                }
+            }
+        }
+    }
+}
+
+tasks.named('processResources') {
+    dependsOn 'validateTranslations'
 }
 
 tasks.register('runClient', JavaExec) {

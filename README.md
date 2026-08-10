@@ -14,20 +14,23 @@ Created by [DrapoMods](https://github.com/drapomods).
 - Supports recruited settlers and visiting human NPCs.
 - Multi-turn conversations that remember whether the topic was a person, animal
   or food, including matching reactions and conclusions.
-- 160 personality-aware English dialogue lines.
-- Compact pixel speech bubbles, thought bubbles for needs and mood, and distinct
-  combat shouts that follow their speaker.
+- 160 personality-aware dialogue lines in English plus 10 complete translations.
+- Speech bubbles with automatic first-run text scaling, selectable font size and
+  font style, thought bubbles for needs and mood, and distinct combat shouts.
 - Context for hunger, injuries, recreation, strikes, happiness, rain, night,
   visitors, jobs and idle settlers.
 - Enabled automatically on every game start.
 - Session toggle with `/bubbles` or `/bubbles on|off`.
-- Configurable frequency, distance, duration and event categories.
+- In-game settings menu opened with `/bubbles settings`, plus an optional
+  shortcut that can be assigned in Necesse's Controls settings.
+- Configurable frequency, distance, duration, font, event categories and smart
+  bubble density.
 - A versioned Java API for add-on mods and compatibility integrations.
 - No world save data; the mod can be added or removed safely.
 
 ## Requirements and installation
 
-Settler Bubbles 1.0.0 targets Necesse 1.3.2. In multiplayer, install the same
+Settler Bubbles 1.1.0 targets Necesse 1.3.2. In multiplayer, install the same
 mod version on the host or dedicated server and on every connecting client.
 
 Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3779949320),
@@ -39,9 +42,27 @@ or place the release jar manually in
 - `/bubbles` toggles bubbles for the current play session.
 - `/bubbles on` enables them for the current session.
 - `/bubbles off` disables them for the current session.
+- `/bubbles settings` opens the settings menu.
 
-Frequency, visibility distance, duration and event categories can be adjusted
-in the mod settings. Bubbles start enabled; no command is required after launch.
+The settings shortcut is unbound by default to avoid conflicts with other mods.
+Players can assign any preferred key in Necesse's Controls settings. Frequency,
+visibility distance, duration, font size, font style, bubble language, dialogue
+categories and the maximum visible bubble count can all be adjusted. The first
+launch picks a font size for the current resolution; players can then override
+it or run auto-detection again. Bubbles start enabled, so no command is required
+after launch.
+
+## Languages
+
+Dialogue follows the language selected in Necesse by default and can be
+overridden manually in the mod settings. Version 1.1.0 includes English,
+Brazilian Portuguese, German, Spanish, French, Dutch, Polish, Russian,
+Simplified Chinese, Japanese and Korean. Unsupported languages fall back to
+English when the game-language option is active.
+
+Translation corrections are welcome through
+[GitHub Issues](https://github.com/drapomods/settler-bubbles/issues). Please
+include the language, translation key, current text and suggested replacement.
 
 ## Java API
 
@@ -92,7 +113,9 @@ SettlerBubblesAPI.fireEvent(BubbleContext.builder(
 
 `showBubble` and `fireEvent` must run on the server. The API applies category
 settings and cooldowns and synchronizes the selected bubble to all clients on
-the speaker's level.
+the speaker's level. Client font, language and density preferences also apply
+to bubbles supplied through the API. API version 1 remains compatible with
+Settler Bubbles 1.0.0 add-ons.
 
 ## Development
 
