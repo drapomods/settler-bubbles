@@ -2,6 +2,20 @@
 
 All notable changes to Settler Bubbles are documented here.
 
+## [1.1.2] - 2026-08-12
+
+### Fixed
+
+- Removed the repetitive generic busy-work chatter that could still appear in
+  English for translated clients. Contextual job-completion lines remain.
+- Base-game settler chat now shares the Settler Bubbles renderer, preventing it
+  from overlapping a mod dialogue or combat bubble on the same settler.
+- A lower-priority bubble can no longer replace an active combat, needs or mood
+  bubble from the same speaker.
+- Manually selected Korean, Japanese and Chinese bubble languages now load the
+  characters used by each message, even when the game interface uses another
+  language. This prevents missing glyphs from appearing as question marks.
+
 ## [1.1.1] - 2026-08-12
 
 ### Fixed

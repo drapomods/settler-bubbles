@@ -19,13 +19,23 @@ public final class BubbleClientManager {
     public static void show(Level level, PlayerMob perspective, Mob mob,
                             BubbleCategory category, BubbleStyle style,
                             String message, int duration) {
-        level.hudManager.removeElements(element -> element instanceof SpeechBubbleHud
-                && ((SpeechBubbleHud)element).isFor(mob));
-
         List<SpeechBubbleHud> active = level.hudManager.streamElements()
                 .filter(element -> element instanceof SpeechBubbleHud && !element.isRemoved())
                 .map(element -> (SpeechBubbleHud)element)
                 .collect(Collectors.toList());
+
+        int incomingPriority = priority(category);
+        for (SpeechBubbleHud bubble : active) {
+            if (bubble.isFor(mob) && priority(bubble.getCategory()) > incomingPriority) {
+                return;
+            }
+        }
+        for (SpeechBubbleHud bubble : active) {
+            if (bubble.isFor(mob)) {
+                bubble.remove();
+            }
+        }
+        active.removeIf(bubble -> bubble.isFor(mob));
 
         IncomingBubble incoming = new IncomingBubble(mob, category);
         List<RankedBubble> ranked = new ArrayList<>();

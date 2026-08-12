@@ -30,7 +30,7 @@ Created by [DrapoMods](https://github.com/drapomods).
 
 ## Requirements and installation
 
-Settler Bubbles 1.1.1 targets Necesse 1.3.2. In multiplayer, install the same
+Settler Bubbles 1.1.2 targets Necesse 1.3.2. In multiplayer, install the same
 mod version on the host or dedicated server and on every connecting client.
 
 Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3779949320),
@@ -55,7 +55,7 @@ after launch.
 ## Languages
 
 Dialogue follows the language selected in Necesse by default and can be
-overridden manually in the mod settings. Version 1.1.1 includes English,
+overridden manually in the mod settings. Version 1.1.2 includes English,
 Brazilian Portuguese, German, Spanish, French, Dutch, Polish, Russian,
 Simplified Chinese, Japanese and Korean. Unsupported languages fall back to
 English when the game-language option is active.
