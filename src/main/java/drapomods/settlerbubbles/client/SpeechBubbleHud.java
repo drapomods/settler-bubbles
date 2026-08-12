@@ -18,6 +18,7 @@ import necesse.gfx.drawables.SortedDrawable;
 import necesse.gfx.fairType.FairType;
 import necesse.gfx.fairType.FairTypeDrawOptions;
 import necesse.gfx.forms.components.chat.ChatMessage;
+import necesse.gfx.gameFont.FontManager;
 import necesse.gfx.gameFont.FontOptions;
 import necesse.entity.mobs.Mob;
 import necesse.entity.mobs.PlayerMob;
@@ -53,6 +54,12 @@ public class SpeechBubbleHud extends HudDrawElement {
     @Override
     public void init(HudManager manager) {
         startTime = getTime();
+        // Necesse normally loads glyphs for the interface language only. The
+        // bubble language can be selected independently, so add the actual
+        // message characters before creating its draw options.
+        if (FontManager.isLoaded() && FontManager.bit != null) {
+            FontManager.bit.updateFont(message);
+        }
         int fontSize = SettlerBubblesSettings.fontSize == 0
                 ? 16
                 : SettlerBubblesSettings.fontSize;
