@@ -6,12 +6,16 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: Thanks for helping improve Settler Bubbles. Please remove private information from logs before uploading them.
+      value: |
+        Thanks for helping improve Settler Bubbles. Please remove private information from logs before uploading them.
+
+        For untranslated dialogue, missing characters or overlapping bubbles, use the dedicated **Translation or dialogue bug** template instead.
   - type: input
     id: mod-version
     attributes:
       label: Settler Bubbles version
-      placeholder: 1.1.1
+      description: Enter the version actually displayed inside Necesse's Mods menu.
+      placeholder: 1.1.2
     validations:
       required: true
   - type: input
