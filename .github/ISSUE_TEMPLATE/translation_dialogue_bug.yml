@@ -1,0 +1,144 @@
+name: Translation or dialogue bug
+description: Report untranslated text, missing characters, incorrect dialogue or overlapping bubbles.
+title: "[Translation/Dialogue]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Settler Bubbles.
+
+        Before reporting an old translation or overlap problem, open Necesse's **Mods** menu and confirm the version shown there. Steam can occasionally keep an older Workshop download cached. If necessary, exit Steam completely or unsubscribe and subscribe again.
+
+        You can drag screenshots and `latest-log.txt` directly into the text boxes below. Please remove private information before uploading files.
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Version shown in Necesse's Mods menu
+      description: Enter the version actually displayed inside Necesse, not the version mentioned on Steam or GitHub.
+      placeholder: 1.1.2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: installation-source
+    attributes:
+      label: Installation source
+      options:
+        - Steam Workshop
+        - GitHub release jar
+        - Development build
+        - Other or unknown
+    validations:
+      required: true
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Necesse version
+      placeholder: 1.3.2
+    validations:
+      required: true
+
+  - type: input
+    id: game-language
+    attributes:
+      label: Necesse interface language
+      placeholder: Korean
+    validations:
+      required: true
+
+  - type: input
+    id: bubble-language
+    attributes:
+      label: Bubble language setting
+      description: Enter the selected option from Settler Bubbles settings.
+      placeholder: Follow game language, Korean, English, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Singleplayer
+        - Hosted multiplayer - host
+        - Hosted multiplayer - client
+        - Dedicated server
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: problem-types
+    attributes:
+      label: What kind of problem occurred?
+      description: Select every option that applies.
+      options:
+        - label: A bubble appeared in English instead of the selected language.
+        - label: Characters appeared as question marks or missing symbols.
+        - label: Two bubbles overlapped or appeared on the same character.
+        - label: The translation was understandable but incorrect or unnatural.
+        - label: A different dialogue or bubble problem occurred.
+    validations:
+      required: true
+
+  - type: textarea
+    id: text-shown
+    attributes:
+      label: Exact text shown
+      description: Copy every affected line exactly as it appeared. Include the suggested translation when reporting incorrect wording.
+      placeholder: |
+        Text shown: Back to work.
+        Expected Korean text: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Explain what the settler was doing and how often the problem occurred.
+      placeholder: |
+        1. Set Bubble language to Korean.
+        2. Load a settlement with working settlers.
+        3. Wait until a settler finishes or starts a job.
+        4. An English or overlapping bubble appears.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or video
+      description: Drag screenshots or a short video here. Please make sure the affected bubble and the surrounding situation are visible.
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other enabled mods
+      description: List all other enabled mods, especially font, UI, dialogue or translation mods. Write "None" if no other mods were enabled.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: latest-log.txt
+      description: Drag `%APPDATA%\Necesse\latest-log.txt` here after reproducing the problem. Please remove private information first.
+
+  - type: checkboxes
+    id: final-checks
+    attributes:
+      label: Final checks
+      options:
+        - label: I confirmed the version displayed inside Necesse's Mods menu.
+          required: true
+        - label: I restarted Steam or re-subscribed if Steam was still loading an older version.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed private information from uploaded logs and screenshots.
+          required: true
