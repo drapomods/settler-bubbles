@@ -208,10 +208,10 @@ weather_night2=もう遅いな。そろそろ切り上げよう。
 weather_night3=明かりの向こうの闇は、いつ見ても妙な感じだ。
 weather_night4=暖かいベッドがますます恋しくなるよ。
 
-activity_busy1=今は<activity>で忙しいんだ。
-activity_busy2=<activity>はもうすぐ終わるよ。
-activity_busy3=<activity>に戻ろう。まだ仕事が残ってる。
-activity_busy4=今日の<activity>が順調に進むといいな。
+activity_busy1=忙しい一日だ。まだ頑張らないと。
+activity_busy2=仕事に戻ろう。
+activity_busy3=次の仕事に取りかかろう。
+activity_busy4=今日は順調に進んでる。
 
 visitor1=この集落は思っていたより面白いね。
 visitor2=ここで暮らすのはどんな感じなんだろう。

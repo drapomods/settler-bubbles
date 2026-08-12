@@ -208,10 +208,10 @@ weather_night2=天色已晚。我应该尽快完成。
 weather_night3=灯光之外的黑暗总是让人感觉很奇怪。
 weather_night4=我越来越想念温暖的床了。
 
-activity_busy1=我现在正忙着 <activity>。
-activity_busy2=<activity> 应该不会花太长时间。
-activity_busy3=回去继续 <activity>。还有活要做。
-activity_busy4=我希望 <activity> 今天顺利。
+activity_busy1=忙碌的一天，得继续干活了。
+activity_busy2=回去工作吧。
+activity_busy3=去忙下一件事。
+activity_busy4=今天进展不错。
 
 visitor1=这个聚落比我预想的更有意思。
 visitor2=我想知道住在这里会是什么样子。
