@@ -2,6 +2,16 @@
 
 All notable changes to Settler Bubbles are documented here.
 
+## [1.1.1] - 2026-08-12
+
+### Fixed
+
+- Busy-work bubbles no longer embed base-game activity messages. This prevents
+  untranslated Necesse activity keys from appearing as English fragments when
+  using Korean or another translated bubble language.
+- The affected short work lines are now fully owned and translated by Settler
+  Bubbles in every supported language.
+
 ## [1.1.0] - 2026-08-10
 
 ### Added

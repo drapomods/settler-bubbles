@@ -226,9 +226,10 @@ public final class DialogueManager {
         } else if (speaker.getWorldEntity().isNight()) {
             ambient(speaker, BubbleCategory.MOOD, "weather_night", 0.18F, 3500);
         } else if (speaker.hasActiveJob() && speaker.getCurrentActivity() != null) {
-            LocalMessage message = line(speaker, "activity_busy");
-            message.addReplacement("activity", speaker.getCurrentActivity());
-            ambient(speaker, BubbleCategory.WORK, message, 0.20F, 3500);
+            // Some base-game locales have untranslated activity keys. Keeping
+            // these lines self-contained prevents English fragments from
+            // leaking into otherwise translated bubbles.
+            ambient(speaker, BubbleCategory.WORK, "activity_busy", 0.20F, 3500);
         } else if (!speaker.hasActiveJob()) {
             ambient(speaker, BubbleCategory.MOOD, "idle", 0.12F, 3400);
         }
