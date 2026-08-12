@@ -9,13 +9,26 @@ body:
       value: |
         Thanks for helping improve Settler Bubbles. Please remove private information from logs before uploading them.
 
-        For untranslated dialogue, missing characters or overlapping bubbles, use the dedicated **Translation or dialogue bug** template instead.
+        Before reporting a problem, open Necesse's **Mods** menu and confirm the version shown there. Steam can occasionally keep an older Workshop download cached. If necessary, exit Steam completely or unsubscribe and subscribe again.
+
+        You can drag screenshots and `latest-log.txt` directly into the text boxes below.
   - type: input
     id: mod-version
     attributes:
-      label: Settler Bubbles version
-      description: Enter the version actually displayed inside Necesse's Mods menu.
+      label: Version shown in Necesse's Mods menu
+      description: Enter the version actually displayed inside Necesse, not the version mentioned on Steam or GitHub.
       placeholder: 1.1.2
+    validations:
+      required: true
+  - type: dropdown
+    id: installation-source
+    attributes:
+      label: Installation source
+      options:
+        - Steam Workshop
+        - GitHub release jar
+        - Development build
+        - Other or unknown
     validations:
       required: true
   - type: input
@@ -25,13 +38,29 @@ body:
       placeholder: 1.3.2
     validations:
       required: true
+  - type: input
+    id: game-language
+    attributes:
+      label: Necesse interface language
+      placeholder: English, Korean, Brazilian Portuguese, etc.
+    validations:
+      required: true
+  - type: input
+    id: bubble-language
+    attributes:
+      label: Bubble language setting
+      description: Enter the selected option from Settler Bubbles settings.
+      placeholder: Follow game language, Korean, English, etc.
+    validations:
+      required: true
   - type: dropdown
     id: environment
     attributes:
       label: Environment
       options:
         - Singleplayer
-        - Hosted multiplayer
+        - Hosted multiplayer - host
+        - Hosted multiplayer - client
         - Dedicated server
     validations:
       required: true
@@ -39,7 +68,7 @@ body:
     id: description
     attributes:
       label: What happened?
-      description: Describe the problem and what you expected to happen.
+      description: Describe the problem, what you expected and how often it occurred. Copy affected dialogue exactly when relevant.
     validations:
       required: true
   - type: textarea
@@ -53,23 +82,31 @@ body:
     validations:
       required: true
   - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or video
+      description: Drag screenshots or a short video here. Make sure the problem and surrounding situation are visible.
+  - type: textarea
     id: mods
     attributes:
       label: Other installed mods
-      description: List other enabled mods, or write "None".
+      description: List all other enabled mods, especially font, UI, dialogue or translation mods. Write "None" if no other mods were enabled.
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: Relevant logs
-      description: Paste the relevant part of `%APPDATA%\Necesse\latest-log.txt` or attach the file. Remove private information first.
-      render: shell
+      label: latest-log.txt
+      description: Drag `%APPDATA%\Necesse\latest-log.txt` here after reproducing the problem, or paste its relevant section. Remove private information first.
   - type: checkboxes
     id: checks
     attributes:
       label: Final checks
       options:
+        - label: I confirmed the version displayed inside Necesse's Mods menu.
+          required: true
+        - label: I restarted Steam or re-subscribed if Steam was still loading an older version.
+          required: true
         - label: I searched existing issues for this problem.
           required: true
         - label: I removed private information from logs and screenshots.
