@@ -74,6 +74,15 @@ public final class BubbleClientManager {
         }
     }
 
+    public static int getActiveCount(Level level) {
+        if (level == null) {
+            return 0;
+        }
+        return (int)level.hudManager.streamElements()
+                .filter(element -> element instanceof SpeechBubbleHud && !element.isRemoved())
+                .count();
+    }
+
     private static int priority(BubbleCategory category) {
         if (category == null) {
             return 0;

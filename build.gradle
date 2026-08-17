@@ -4,7 +4,7 @@ plugins {
 
 project.ext.modID = 'drapomods.settlerbubbles'
 project.ext.modName = 'Settler Bubbles'
-project.ext.modVersion = '1.1.2'
+project.ext.modVersion = '1.2.0'
 project.ext.gameVersion = '1.3.2'
 project.ext.modDescription = 'Speech bubbles inspired by RimWorld that make settlers and visitors feel alive.'
 project.ext.author = 'DrapoMods'
@@ -127,6 +127,9 @@ tasks.register('validateTranslations') {
                 if (value.isEmpty()) {
                     throw new GradleException("Empty translation for ${key} in ${localeFile.name}")
                 }
+                if (value.contains('\uFFFD') || value ==~ /.*\?{3,}.*/) {
+                    throw new GradleException("Broken or unreadable translation for ${key} in ${localeFile.name}")
+                }
                 if (entries.put(key, value) != null) {
                     throw new GradleException("Duplicate translation key ${key} in ${localeFile.name}")
                 }
@@ -201,4 +204,65 @@ tasks.register('buildModJar', Jar) {
     from configurations.libDepends.collect { it.isDirectory() ? it : zipTree(it) }
     setArchiveFileName("${jarName}.jar")
     setDestinationDirectory(file(buildLocation))
+}
+
+tasks.register('smokeTest') {
+    group = 'verification'
+    description = 'Builds the mod and verifies its dialogue catalog and distributable jar.'
+    dependsOn 'buildModJar'
+    doLast {
+        def archive = file("${buildLocation}${jarName}.jar")
+        if (!archive.exists()) {
+            throw new GradleException("Smoke test could not find ${archive}")
+        }
+
+        def modEntrySource = file('src/main/java/drapomods/settlerbubbles/SettlerBubblesMod.java')
+                .getText('UTF-8')
+        if (!modEntrySource.contains("VERSION = \"${project.ext.modVersion}\"")) {
+            throw new GradleException('SettlerBubblesMod.VERSION does not match build.gradle')
+        }
+        if (!modEntrySource.contains("GAME_VERSION = \"${project.ext.gameVersion}\"")) {
+            throw new GradleException('SettlerBubblesMod.GAME_VERSION does not match build.gradle')
+        }
+
+        def requiredEntries = [
+                'mod.info',
+                'resources/preview.png',
+                'resources/locale/en.lang',
+                'drapomods/settlerbubbles/dialogue/DialogueManager.class',
+                'drapomods/settlerbubbles/client/BubbleDiagnostics.class',
+                'drapomods/settlerbubbles/client/BubbleSmokeTest.class',
+                'drapomods/settlerbubbles/patch/ClientTickPatches.class'
+        ] + supportedLocaleCodes.collect { "resources/locale/${it}.lang" }
+
+        def zip = new java.util.zip.ZipFile(archive)
+        try {
+            def missingEntries = requiredEntries.findAll { zip.getEntry(it) == null }
+            if (!missingEntries.isEmpty()) {
+                throw new GradleException("Smoke test found missing jar entries: ${missingEntries}")
+            }
+        } finally {
+            zip.close()
+        }
+
+        def englishText = file('src/main/resources/locale/en.lang').getText('UTF-8')
+        def requiredDialogue = [
+                'social_person_memory_positive1', 'social_person_memory_negative1',
+                'social_animal_memory_positive1', 'social_animal_memory_negative1',
+                'social_food_memory_positive1', 'social_food_memory_negative1',
+                'work_mine1', 'work_build1', 'work_cook1',
+                'work_care1', 'work_haul1', 'work_guard1',
+                'event_attack1', 'event_injury1', 'event_food_shortage1',
+                'event_rain1', 'event_strike1', 'event_victory1'
+        ]
+        def missingDialogue = requiredDialogue.findAll {
+            !(englishText =~ /(?m)^${java.util.regex.Pattern.quote(it)}=/).find()
+        }
+        if (!missingDialogue.isEmpty()) {
+            throw new GradleException("Smoke test found missing dialogue groups: ${missingDialogue}")
+        }
+
+        println("Settler Bubbles smoke test passed: ${archive.name}, "
+                + "${supportedLocaleCodes.size()} locales and ${requiredDialogue.size()} dialogue groups checked.")
+    }
 }

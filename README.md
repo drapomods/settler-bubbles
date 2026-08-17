@@ -14,11 +14,18 @@ Created by [DrapoMods](https://github.com/drapomods).
 - Supports recruited settlers and visiting human NPCs.
 - Multi-turn conversations that remember whether the topic was a person, animal
   or food, including matching reactions and conclusions.
-- 160 personality-aware dialogue lines in English plus 10 complete translations.
+- Session-only social memory and stable opinions about villagers, animals and
+  food, including callbacks to earlier conversations.
+- More than 190 personality-aware dialogue lines in English plus 10 complete
+  translations.
 - Speech bubbles with automatic first-run text scaling, selectable font size and
   font style, thought bubbles for needs and mood, and distinct combat shouts.
 - Context for hunger, injuries, recreation, strikes, happiness, rain, night,
   visitors, jobs and idle settlers.
+- Nearby settlers react to attacks, injuries, food shortages, rain, strikes and
+  victories instead of every event remaining an isolated thought.
+- Dedicated work lines for farming, fishing, crafting, woodcutting, mining,
+  building, cooking, caring, hauling and guarding.
 - Enabled automatically on every game start.
 - Session toggle with `/bubbles` or `/bubbles on|off`.
 - In-game settings menu opened with `/bubbles settings`, plus an optional
@@ -30,7 +37,7 @@ Created by [DrapoMods](https://github.com/drapomods).
 
 ## Requirements and installation
 
-Settler Bubbles 1.1.2 targets Necesse 1.3.2. In multiplayer, install the same
+Settler Bubbles 1.2.0 targets Necesse 1.3.2. In multiplayer, install the same
 mod version on the host or dedicated server and on every connecting client.
 
 Subscribe through the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3779949320),
@@ -43,6 +50,10 @@ or place the release jar manually in
 - `/bubbles on` enables them for the current session.
 - `/bubbles off` disables them for the current session.
 - `/bubbles settings` opens the settings menu.
+- `/bubbles debug` prints the effective settings, language, session-memory
+  counts and possible chatter-mod conflicts.
+- `/bubbles smoke` starts or cancels a guided visual test of every bubble style
+  and the new dialogue groups. The full sequence takes about 49 seconds.
 
 The settings shortcut is unbound by default to avoid conflicts with other mods.
 Players can assign any preferred key in Necesse's Controls settings. Frequency,
@@ -55,7 +66,7 @@ after launch.
 ## Languages
 
 Dialogue follows the language selected in Necesse by default and can be
-overridden manually in the mod settings. Version 1.1.2 includes English,
+overridden manually in the mod settings. Version 1.2.0 includes English,
 Brazilian Portuguese, German, Spanish, French, Dutch, Polish, Russian,
 Simplified Chinese, Japanese and Korean. Unsupported languages fall back to
 English when the game-language option is active.
@@ -128,6 +139,8 @@ automatically.
 - `gradlew.bat runClient` launches the normal development client.
 - `gradlew.bat runDevClient` launches a second client.
 - `gradlew.bat runServer` launches a dedicated server.
+- `gradlew.bat smokeTest` builds the release and checks all locale keys,
+  placeholders, required dialogue groups and required jar contents.
 
 ## Support
 

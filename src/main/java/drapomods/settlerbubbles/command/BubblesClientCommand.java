@@ -1,7 +1,9 @@
 package drapomods.settlerbubbles.command;
 
 import drapomods.settlerbubbles.SettlerBubblesSettings;
+import drapomods.settlerbubbles.client.BubbleDiagnostics;
 import drapomods.settlerbubbles.client.BubbleSettingsMenuController;
+import drapomods.settlerbubbles.client.BubbleSmokeTest;
 import necesse.engine.commands.CmdParameter;
 import necesse.engine.commands.CommandLog;
 import necesse.engine.commands.ModularChatCommand;
@@ -13,10 +15,11 @@ import necesse.engine.network.server.ServerClient;
 
 public class BubblesClientCommand extends ModularChatCommand {
     public BubblesClientCommand() {
-        super("bubbles", "Toggle settler speech bubbles for this client.",
+        super("bubbles", "Control, inspect or test Settler Bubbles for this client.",
                 PermissionLevel.USER, false,
                 new CmdParameter("state",
-                        new PresetStringParameterHandler(true, "on", "off", "toggle", "settings"), true));
+                        new PresetStringParameterHandler("on", "off", "toggle",
+                                "settings", "debug", "smoke"), true));
     }
 
     @Override
@@ -27,6 +30,14 @@ public class BubblesClientCommand extends ModularChatCommand {
             if (!BubbleSettingsMenuController.open(client)) {
                 commandLog.add("Settler Bubbles settings can only be opened while playing.");
             }
+            return;
+        } else if ("debug".equalsIgnoreCase(state)) {
+            for (String line : BubbleDiagnostics.buildReport(client)) {
+                commandLog.add(line);
+            }
+            return;
+        } else if ("smoke".equalsIgnoreCase(state)) {
+            commandLog.add(BubbleSmokeTest.toggle(client));
             return;
         } else if ("on".equalsIgnoreCase(state)) {
             SettlerBubblesSettings.enabled = true;

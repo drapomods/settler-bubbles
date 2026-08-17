@@ -42,18 +42,30 @@ social_person3=<other> always has an interesting story.
 social_person4=You know what <other> said the other day?
 social_person_energetic1=We should get <other> in on this too!
 social_person_refined1=<other> has rather fascinating opinions.
+social_person_memory_positive1=We spoke about <topic> before. I still think highly of them.
+social_person_memory_positive2=I remember our last talk about <topic>. We agreed then too.
+social_person_memory_negative1=We discussed <topic> before. My opinion has not changed.
+social_person_memory_negative2=Last time we spoke about <topic>, we disagreed about them too.
 
 social_animal1=I saw a <animal> nearby earlier.
 social_animal2=Do you like <animal>s? I think they are charming.
 social_animal3=Imagine keeping a <animal> around the settlement.
 social_animal4=A <animal> crossed my path today.
 social_animal_gentle1=I hope that little <animal> is safe out there.
+social_animal_memory_positive1=We talked about <topic> before. I still enjoy seeing them around.
+social_animal_memory_positive2=Remember that <topic> we discussed? I still find them charming.
+social_animal_memory_negative1=We have discussed <topic>s before. I still do not trust them.
+social_animal_memory_negative2=That <topic> again? You already know how I feel about them.
 
 social_food1=I could really go for some <food>.
 social_food2=What do you think about <food>?
 social_food3=Nothing brings people together like <food>.
 social_food4=I have been thinking about <food> all day.
 social_food_refined1=A properly prepared <food> can be delightful.
+social_food_memory_positive1=We agreed about <topic> before. I could still eat some now.
+social_food_memory_positive2=Remember our last talk about <topic>? It still sounds delicious.
+social_food_memory_negative1=We have had this discussion about <topic>. I still do not want any.
+social_food_memory_negative2=<topic> again? My opinion has not improved since last time.
 
 social_positive1=That is exactly what I was thinking!
 social_positive2=You make a very good point, <other>.
@@ -143,6 +155,30 @@ work_wood1=That should give us enough timber.
 work_wood2=Another tree put to good use.
 work_wood3=Plenty of sturdy wood here.
 
+work_mine1=Another useful vein cleared out.
+work_mine2=The deeper we dig, the more the settlement can build.
+work_mine3=Good ore is worth the dust.
+
+work_build1=Another piece of the settlement in place.
+work_build2=Built straight and built to last.
+work_build3=This place is starting to feel like a proper home.
+
+work_cook1=Fresh food, ready to serve.
+work_cook2=A good meal keeps the whole settlement moving.
+work_cook3=That should taste as good as it smells.
+
+work_care1=Easy now. You are in good hands.
+work_care2=Everyone here deserves proper care.
+work_care3=Healthy animals make a healthy settlement.
+
+work_haul1=Supplies delivered where they belong.
+work_haul2=One more load safely stored.
+work_haul3=Keeping things moving keeps this place running.
+
+work_guard1=All quiet here. I will keep watching.
+work_guard2=Nothing is getting past me today.
+work_guard3=The settlement is safe on my watch.
+
 needs_hungry1=My stomach is doing all the talking now.
 needs_hungry2=I need to find something to eat soon.
 needs_hungry3=Please tell me we still have food.
@@ -218,3 +254,16 @@ idle1=A quiet moment is a rare luxury.
 idle2=I wonder if anyone needs a hand.
 idle3=Nothing urgent for once. That feels unusual.
 idle4=Maybe I can enjoy the view for a minute.
+
+event_attack1=<other>, are you all right?
+event_attack2=Stay with us, <other>!
+event_injury1=You should get those wounds treated, <other>.
+event_injury2=Take it easy, <other>. We can handle things here.
+event_food_shortage1=If <other> is hungry too, our stores must be running low.
+event_food_shortage2=We need to find more food before this gets worse.
+event_rain1=Looks like <other> noticed the rain too.
+event_rain2=Let us hope this shower passes quickly.
+event_strike1=I understand why <other> has had enough.
+event_strike2=We should fix this before anyone else stops working.
+event_victory1=Nice work, <other>!
+event_victory2=That is how we protect our home!
